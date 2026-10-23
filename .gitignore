@@ -1,0 +1,15 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+*.tsbuildinfo
+
+# Reference source files
+*.pptx
+*.xlsx
+
+# Environment & OS files
+.DS_Store
+.env
+.env.*
