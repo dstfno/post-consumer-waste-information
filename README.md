@@ -2,6 +2,8 @@
 
 Vite + React + TypeScript app for Recovinyl / VinylPlus Post-Consumer PVC Waste Information (PCWI Europe).
 
+**Synthetic data notice:** All displayed tonnages, polymer kilotonnes, and related volume figures in this public repo are **synthetic / randomized for demo purposes**. They are not real Recovinyl, VinylPlus, or national reporting statistics. Structure, labels, countries, and facility names are preserved for UI realism; numeric volumes were deterministically scrambled (seeded one-time transform in `scripts/randomize-tonnages.mjs`) so builds stay stable without `Math.random()` at runtime.
+
 ## Local run
 
 ```bash

@@ -43,12 +43,12 @@ export const GERMANY_2025_DATASET: CountryPCWIDataset = {
     gdpGrowthPct: '+0.3% (2025)',
     inflationPct: '2.1%',
     unemploymentPct: '5.9%',
-    virginPolymerKt2024: 10850,
-    recycledPolymerKt2024: 1920,
+    virginPolymerKt2024: 9366,
+    recycledPolymerKt2024: 2040,
     plasticDomesticRecycledPct: 38,
     plasticExportedPct: 12,
     plasticIncineratedPct: 49,
-    pvcRecycledKt2024: 248.4,
+    pvcRecycledKt2024: 283,
     constructionGrowth2024Pct: '-3.1%',
     constructionGrowth2025Pct: '+0.8%',
     politicalLandscape: [
@@ -65,65 +65,65 @@ export const GERMANY_2025_DATASET: CountryPCWIDataset = {
   },
   recoTrace: {
     ...ITALY_2025_DATASET.recoTrace,
-    recyclingInputTonnes: 256400,
-    recyclingOutputTonnes: 248420,
-    convertingInputTonnes: 142300,
-    convertingOutputTonnes: 139800,
+    recyclingInputTonnes: 243529,
+    recyclingOutputTonnes: 258769,
+    convertingInputTonnes: 112314,
+    convertingOutputTonnes: 126841,
     topEndApplication: 'Windows & Profiles / Pipes',
     preConsumerSharePct: 42,
     postConsumerSharePct: 58,
-    ytdRecyclingTotalTonnes: 98400,
-    ytdRecyclingForecastTonnes: 255000,
-    ytdRecyclingPreConsumerTonnes: 41328,
-    ytdRecyclingPostConsumerTonnes: 57072,
-    ytdConvertingTotalTonnes: 54200,
-    ytdConvertingForecastTonnes: 145000,
+    ytdRecyclingTotalTonnes: 100839,
+    ytdRecyclingForecastTonnes: 273226,
+    ytdRecyclingPreConsumerTonnes: 34237,
+    ytdRecyclingPostConsumerTonnes: 49296,
+    ytdConvertingTotalTonnes: 65481,
+    ytdConvertingForecastTonnes: 134928,
     ytdExplanation: 'Strong post-consumer window profile and pipe collection via Rewindo and KRV despite softer new-build construction activity.'
   },
   card1: {
     ...ITALY_2025_DATASET.card1,
-    totalRigidGenerated: 295000,
-    totalFlexibleGenerated: 165000,
-    totalGenerated: 460000,
+    totalRigidGenerated: 240252,
+    totalFlexibleGenerated: 179393,
+    totalGenerated: 460510,
     q1_2_streams: [
-      { id: 'de-g1', wasteType: 'B&C (Windows, Profiles, Pipes)', pvcType: 'Rigid PVC', quantityTonnes: 235000, basis: 'Evidence-based', notes: 'Tracked via Conversio / Rewindo mass-flow study' },
-      { id: 'de-g2', wasteType: 'WEEE / Cables (ElektroG)', pvcType: 'Flexible PVC', quantityTonnes: 92000, basis: 'Evidence-based' },
-      { id: 'de-g3', wasteType: 'Flooring & Membranes', pvcType: 'Flexible PVC', quantityTonnes: 45000, basis: 'Evidence-based' },
-      { id: 'de-g4', wasteType: 'Commercial & Bulky Rigid Waste', pvcType: 'Rigid PVC', quantityTonnes: 60000, basis: 'Educated estimation' },
-      { id: 'de-g5', wasteType: 'Packaging, Medical & Other Flex', pvcType: 'Flexible PVC', quantityTonnes: 28000, basis: 'Educated estimation' }
+      { id: 'de-g1', wasteType: 'B&C (Windows, Profiles, Pipes)', pvcType: 'Rigid PVC', quantityTonnes: 211380, basis: 'Evidence-based', notes: 'Tracked via Conversio / Rewindo mass-flow study' },
+      { id: 'de-g2', wasteType: 'WEEE / Cables (ElektroG)', pvcType: 'Flexible PVC', quantityTonnes: 107528, basis: 'Evidence-based' },
+      { id: 'de-g3', wasteType: 'Flooring & Membranes', pvcType: 'Flexible PVC', quantityTonnes: 41867, basis: 'Evidence-based' },
+      { id: 'de-g4', wasteType: 'Commercial & Bulky Rigid Waste', pvcType: 'Rigid PVC', quantityTonnes: 46822, basis: 'Educated estimation' },
+      { id: 'de-g5', wasteType: 'Packaging, Medical & Other Flex', pvcType: 'Flexible PVC', quantityTonnes: 32128, basis: 'Educated estimation' }
     ]
   },
   card2: {
     ...ITALY_2025_DATASET.card2,
-    totalRigidCollected: 128000,
-    totalFlexibleCollected: 67000,
-    totalCollected: 195000,
+    totalRigidCollected: 130595,
+    totalFlexibleCollected: 61729,
+    totalCollected: 158285,
     q2_4_collectedStreams: [
-      { wasteType: 'B&C (Windows, Profiles, Roller Shutters, Pipes)', pvcType: 'Rigid PVC', quantityTonnes: 122000 },
-      { wasteType: 'CABLES (ElektroG & C&D)', pvcType: 'Flexible PVC', quantityTonnes: 52000 },
-      { wasteType: 'FLOORING & ROOFING MEMBRANES', pvcType: 'Flexible PVC', quantityTonnes: 15000 },
-      { wasteType: 'LARGE URBAN / COMMERCIAL RIGID', pvcType: 'Rigid PVC', quantityTonnes: 6000 }
+      { wasteType: 'B&C (Windows, Profiles, Roller Shutters, Pipes)', pvcType: 'Rigid PVC', quantityTonnes: 140725 },
+      { wasteType: 'CABLES (ElektroG & C&D)', pvcType: 'Flexible PVC', quantityTonnes: 45994 },
+      { wasteType: 'FLOORING & ROOFING MEMBRANES', pvcType: 'Flexible PVC', quantityTonnes: 15373 },
+      { wasteType: 'LARGE URBAN / COMMERCIAL RIGID', pvcType: 'Rigid PVC', quantityTonnes: 4862 }
     ]
   },
   card3: {
     ...ITALY_2025_DATASET.card3,
-    totalSortedProcessed: 182000
+    totalSortedProcessed: 218958
   },
   card4: {
     ...ITALY_2025_DATASET.card4,
-    totalRigidRecycled: 104000,
-    totalFlexibleRecycled: 32000,
-    totalMixedRecycled: 8000,
-    totalRecycledOutput: 144000,
-    totalUptakeTonnes: 139800
+    totalRigidRecycled: 89320,
+    totalFlexibleRecycled: 32495,
+    totalMixedRecycled: 7949,
+    totalRecycledOutput: 137239,
+    totalUptakeTonnes: 126841
   },
   card5: {
     ...ITALY_2025_DATASET.card5,
-    totalIncineratedTonnes: 248000
+    totalIncineratedTonnes: 292477
   },
   card6: {
     ...ITALY_2025_DATASET.card6,
-    q6_4_totalLandfilledEstimateTonnes: 8500
+    q6_4_totalLandfilledEstimateTonnes: 9269
   },
   card7: {
     ...ITALY_2025_DATASET.card7,
@@ -163,12 +163,12 @@ export const FRANCE_2025_DATASET: CountryPCWIDataset = {
     gdpGrowthPct: '+0.8% (2025)',
     inflationPct: '1.9%',
     unemploymentPct: '7.3%',
-    virginPolymerKt2024: 4650,
-    recycledPolymerKt2024: 910,
+    virginPolymerKt2024: 4925,
+    recycledPolymerKt2024: 741,
     plasticDomesticRecycledPct: 25,
     plasticExportedPct: 18,
     plasticIncineratedPct: 42,
-    pvcRecycledKt2024: 136.2,
+    pvcRecycledKt2024: 130.8,
     politicalLandscape: [
       'Mandatory Building & Construction EPR (REP PMCB under AGEC Law) operational since 2023 via Valobat, Ecomaison, and Valdelia.',
       'Free take-back of sorted rigid PVC construction waste (pipes, windows, profiles) at certified collection points.',
@@ -177,51 +177,51 @@ export const FRANCE_2025_DATASET: CountryPCWIDataset = {
   },
   recoTrace: {
     ...ITALY_2025_DATASET.recoTrace,
-    recyclingInputTonnes: 141000,
-    recyclingOutputTonnes: 136200,
-    convertingInputTonnes: 96400,
-    convertingOutputTonnes: 94100,
+    recyclingInputTonnes: 139961,
+    recyclingOutputTonnes: 152640,
+    convertingInputTonnes: 107133,
+    convertingOutputTonnes: 78897,
     topEndApplication: 'Pipes & Window Profiles',
     preConsumerSharePct: 46,
     postConsumerSharePct: 54,
-    ytdRecyclingTotalTonnes: 58900,
-    ytdRecyclingForecastTonnes: 142000,
-    ytdRecyclingPreConsumerTonnes: 27094,
-    ytdRecyclingPostConsumerTonnes: 31806,
-    ytdConvertingTotalTonnes: 41200,
-    ytdConvertingForecastTonnes: 98000
+    ytdRecyclingTotalTonnes: 57315,
+    ytdRecyclingForecastTonnes: 113095,
+    ytdRecyclingPreConsumerTonnes: 23565,
+    ytdRecyclingPostConsumerTonnes: 30742,
+    ytdConvertingTotalTonnes: 40961,
+    ytdConvertingForecastTonnes: 99453
   },
   card1: {
     ...ITALY_2025_DATASET.card1,
-    totalRigidGenerated: 215000,
-    totalFlexibleGenerated: 125000,
-    totalGenerated: 340000
+    totalRigidGenerated: 225534,
+    totalFlexibleGenerated: 141509,
+    totalGenerated: 371894
   },
   card2: {
     ...ITALY_2025_DATASET.card2,
-    totalRigidCollected: 74000,
-    totalFlexibleCollected: 41000,
-    totalCollected: 115000
+    totalRigidCollected: 62345,
+    totalFlexibleCollected: 37299,
+    totalCollected: 110889
   },
   card3: {
     ...ITALY_2025_DATASET.card3,
-    totalSortedProcessed: 102000
+    totalSortedProcessed: 114314
   },
   card4: {
     ...ITALY_2025_DATASET.card4,
-    totalRigidRecycled: 51000,
-    totalFlexibleRecycled: 18500,
-    totalMixedRecycled: 4000,
-    totalRecycledOutput: 73500,
-    totalUptakeTonnes: 94100
+    totalRigidRecycled: 61161,
+    totalFlexibleRecycled: 16344,
+    totalMixedRecycled: 3167,
+    totalRecycledOutput: 59717,
+    totalUptakeTonnes: 78897
   },
   card5: {
     ...ITALY_2025_DATASET.card5,
-    totalIncineratedTonnes: 118000
+    totalIncineratedTonnes: 120783
   },
   card6: {
     ...ITALY_2025_DATASET.card6,
-    q6_4_totalLandfilledEstimateTonnes: 108500
+    q6_4_totalLandfilledEstimateTonnes: 112086
   },
   card7: {
     ...ITALY_2025_DATASET.card7,
@@ -257,12 +257,12 @@ export const EUROPEAN_COUNTRIES_SUMMARY: EuropeanCountrySummary[] = [
     trackB1: 'Completed',
     trackB2: 'Completed',
     finalSubmission: 'Completed',
-    generatedTonnes: 309119,
-    collectedTonnes: 42030,
-    recycledTonnes: 20634,
-    incineratedTonnes: 23536,
-    landfilledTonnes: 169367,
-    recoTrace2024OutputTonnes: 87064,
+    generatedTonnes: 256970,
+    collectedTonnes: 35304,
+    recycledTonnes: 20641,
+    incineratedTonnes: 26058,
+    landfilledTonnes: 178843,
+    recoTrace2024OutputTonnes: 74057,
     hasFullDataset: true
   },
   {
@@ -276,12 +276,12 @@ export const EUROPEAN_COUNTRIES_SUMMARY: EuropeanCountrySummary[] = [
     trackB1: 'Completed',
     trackB2: 'In Progress',
     finalSubmission: 'In Progress',
-    generatedTonnes: 460000,
-    collectedTonnes: 195000,
-    recycledTonnes: 144000,
-    incineratedTonnes: 248000,
-    landfilledTonnes: 8500,
-    recoTrace2024OutputTonnes: 248420,
+    generatedTonnes: 460510,
+    collectedTonnes: 158285,
+    recycledTonnes: 137239,
+    incineratedTonnes: 292477,
+    landfilledTonnes: 9269,
+    recoTrace2024OutputTonnes: 258769,
     hasFullDataset: true
   },
   {
@@ -295,12 +295,12 @@ export const EUROPEAN_COUNTRIES_SUMMARY: EuropeanCountrySummary[] = [
     trackB1: 'Completed',
     trackB2: 'Draft Submitted',
     finalSubmission: 'In Progress',
-    generatedTonnes: 340000,
-    collectedTonnes: 115000,
-    recycledTonnes: 73500,
-    incineratedTonnes: 118000,
-    landfilledTonnes: 108500,
-    recoTrace2024OutputTonnes: 136200,
+    generatedTonnes: 371894,
+    collectedTonnes: 110889,
+    recycledTonnes: 59717,
+    incineratedTonnes: 120783,
+    landfilledTonnes: 112086,
+    recoTrace2024OutputTonnes: 152640,
     hasFullDataset: true
   },
   {
@@ -314,12 +314,12 @@ export const EUROPEAN_COUNTRIES_SUMMARY: EuropeanCountrySummary[] = [
     trackB1: 'Draft Submitted',
     trackB2: 'In Progress',
     finalSubmission: 'Pending',
-    generatedTonnes: 295000,
-    collectedTonnes: 98000,
-    recycledTonnes: 64200,
-    incineratedTonnes: 112000,
-    landfilledTonnes: 94000,
-    recoTrace2024OutputTonnes: 119500,
+    generatedTonnes: 240252,
+    collectedTonnes: 99453,
+    recycledTonnes: 52052,
+    incineratedTonnes: 126085,
+    landfilledTonnes: 97401,
+    recoTrace2024OutputTonnes: 119042,
     hasFullDataset: false
   },
   {
@@ -333,12 +333,12 @@ export const EUROPEAN_COUNTRIES_SUMMARY: EuropeanCountrySummary[] = [
     trackB1: 'Draft Submitted',
     trackB2: 'In Progress',
     finalSubmission: 'Pending',
-    generatedTonnes: 225000,
-    collectedTonnes: 48500,
-    recycledTonnes: 31200,
-    incineratedTonnes: 34000,
-    landfilledTonnes: 138000,
-    recoTrace2024OutputTonnes: 64800,
+    generatedTonnes: 200108,
+    collectedTonnes: 49909,
+    recycledTonnes: 31510,
+    incineratedTonnes: 31265,
+    landfilledTonnes: 158484,
+    recoTrace2024OutputTonnes: 50902,
     hasFullDataset: false
   },
   {
@@ -352,12 +352,12 @@ export const EUROPEAN_COUNTRIES_SUMMARY: EuropeanCountrySummary[] = [
     trackB1: 'In Progress',
     trackB2: 'Pending',
     finalSubmission: 'Pending',
-    generatedTonnes: 198000,
-    collectedTonnes: 44000,
-    recycledTonnes: 28900,
-    incineratedTonnes: 42000,
-    landfilledTonnes: 109000,
-    recoTrace2024OutputTonnes: 58200,
+    generatedTonnes: 198532,
+    collectedTonnes: 51873,
+    recycledTonnes: 32297,
+    incineratedTonnes: 37546,
+    landfilledTonnes: 97420,
+    recoTrace2024OutputTonnes: 54301,
     hasFullDataset: false
   },
   {
@@ -371,12 +371,12 @@ export const EUROPEAN_COUNTRIES_SUMMARY: EuropeanCountrySummary[] = [
     trackB1: 'Completed',
     trackB2: 'Draft Submitted',
     finalSubmission: 'In Progress',
-    generatedTonnes: 112000,
-    collectedTonnes: 54000,
-    recycledTonnes: 41500,
-    incineratedTonnes: 56000,
-    landfilledTonnes: 2100,
-    recoTrace2024OutputTonnes: 52400,
+    generatedTonnes: 126085,
+    collectedTonnes: 54165,
+    recycledTonnes: 39471,
+    incineratedTonnes: 60724,
+    landfilledTonnes: 2007,
+    recoTrace2024OutputTonnes: 62023,
     hasFullDataset: false
   },
   {
@@ -390,12 +390,12 @@ export const EUROPEAN_COUNTRIES_SUMMARY: EuropeanCountrySummary[] = [
     trackB1: 'Completed',
     trackB2: 'Draft Submitted',
     finalSubmission: 'In Progress',
-    generatedTonnes: 84000,
-    collectedTonnes: 39500,
-    recycledTonnes: 29800,
-    incineratedTonnes: 41000,
-    landfilledTonnes: 1800,
-    recoTrace2024OutputTonnes: 41900,
+    generatedTonnes: 80705,
+    collectedTonnes: 47310,
+    recycledTonnes: 34421,
+    incineratedTonnes: 37299,
+    landfilledTonnes: 1777,
+    recoTrace2024OutputTonnes: 38195,
     hasFullDataset: false
   },
   {
@@ -409,12 +409,12 @@ export const EUROPEAN_COUNTRIES_SUMMARY: EuropeanCountrySummary[] = [
     trackB1: 'In Progress',
     trackB2: 'Pending',
     finalSubmission: 'Pending',
-    generatedTonnes: 56000,
-    collectedTonnes: 22400,
-    recycledTonnes: 16200,
-    incineratedTonnes: 34000,
-    landfilledTonnes: 1200,
-    recoTrace2024OutputTonnes: 24100,
+    generatedTonnes: 60724,
+    collectedTonnes: 26782,
+    recycledTonnes: 13864,
+    incineratedTonnes: 31265,
+    landfilledTonnes: 1370,
+    recoTrace2024OutputTonnes: 27586,
     hasFullDataset: false
   },
   {
@@ -428,12 +428,12 @@ export const EUROPEAN_COUNTRIES_SUMMARY: EuropeanCountrySummary[] = [
     trackB1: 'In Progress',
     trackB2: 'Pending',
     finalSubmission: 'Pending',
-    generatedTonnes: 64000,
-    collectedTonnes: 16800,
-    recycledTonnes: 11400,
-    incineratedTonnes: 14500,
-    landfilledTonnes: 34000,
-    recoTrace2024OutputTonnes: 22800,
+    generatedTonnes: 60187,
+    collectedTonnes: 14671,
+    recycledTonnes: 13792,
+    incineratedTonnes: 11670,
+    landfilledTonnes: 31265,
+    recoTrace2024OutputTonnes: 24646,
     hasFullDataset: false
   },
   {
@@ -447,12 +447,12 @@ export const EUROPEAN_COUNTRIES_SUMMARY: EuropeanCountrySummary[] = [
     trackB1: 'In Progress',
     trackB2: 'Pending',
     finalSubmission: 'Pending',
-    generatedTonnes: 52000,
-    collectedTonnes: 18200,
-    recycledTonnes: 12100,
-    incineratedTonnes: 36500,
-    landfilledTonnes: 900,
-    recoTrace2024OutputTonnes: 16400,
+    generatedTonnes: 45994,
+    collectedTonnes: 16142,
+    recycledTonnes: 13506,
+    incineratedTonnes: 36056,
+    landfilledTonnes: 1037,
+    recoTrace2024OutputTonnes: 13272,
     hasFullDataset: false
   },
   {
@@ -466,12 +466,12 @@ export const EUROPEAN_COUNTRIES_SUMMARY: EuropeanCountrySummary[] = [
     trackB1: 'In Progress',
     trackB2: 'Pending',
     finalSubmission: 'Pending',
-    generatedTonnes: 48000,
-    collectedTonnes: 21000,
-    recycledTonnes: 14800,
-    incineratedTonnes: 31500,
-    landfilledTonnes: 400,
-    recoTrace2024OutputTonnes: 18200,
+    generatedTonnes: 41599,
+    collectedTonnes: 25561,
+    recycledTonnes: 16237,
+    incineratedTonnes: 25415,
+    landfilledTonnes: 332,
+    recoTrace2024OutputTonnes: 16142,
     hasFullDataset: false
   }
 ];
@@ -514,9 +514,9 @@ export function buildEuropeanAggregatedDataset(
   const frDataset = accounts.find((a) => a.countryCode === 'FR')?.dataset || FRANCE_2025_DATASET;
 
   // Scale factor relative to Italy's baseline for stream-level distributions
-  const genScale = itDataset.card1.totalGenerated > 0 ? totalGenerated / itDataset.card1.totalGenerated : 7.25;
-  const colScale = itDataset.card2.totalCollected > 0 ? totalCollected / itDataset.card2.totalCollected : 17.0;
-  const recScale = itDataset.card4.totalRecycledOutput > 0 ? totalRecycledOutput / itDataset.card4.totalRecycledOutput : 23.66;
+  const genScale = itDataset.card1.totalGenerated > 0 ? totalGenerated / itDataset.card1.totalGenerated: 7.1;
+  const colScale = itDataset.card2.totalCollected > 0 ? totalCollected / itDataset.card2.totalCollected: 16;
+  const recScale = itDataset.card4.totalRecycledOutput > 0 ? totalRecycledOutput / itDataset.card4.totalRecycledOutput: 25.4;
 
   // Scale Q1.2 streams so they sum to totalGenerated
   const scaledQ12Streams = itDataset.card1.q1_2_streams.map((s) => ({
@@ -704,9 +704,9 @@ export function buildEuropeanAggregatedDataset(
       gdpGrowthPct: '+0.9% (EU Avg 2025)',
       inflationPct: '2.2%',
       unemploymentPct: '6.0%',
-      virginPolymerKt2024: 50400,
+      virginPolymerKt2024: 40969,
       virginPolymerTrend: '-1.4% YoY across European converters',
-      recycledPolymerKt2024: 9350,
+      recycledPolymerKt2024: 7977,
       recycledPolymerTrend: '+4.8% YoY growth in circular polymer uptake',
       plasticDomesticRecycledPct: 31,
       plasticExportedPct: 14,

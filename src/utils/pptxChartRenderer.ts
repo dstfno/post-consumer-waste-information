@@ -804,13 +804,13 @@ export function renderValueChainMassFlowDiagram(dataset: CountryPCWIDataset): st
     destinationCountries: 'France',
     pvcType: 'Flexible PVC',
     wasteType: 'Advertising',
-    totalQuantityTonnes: 99
+    totalQuantityTonnes: 0
   };
   const exp2 = exportsList[0] || {
     destinationCountries: 'Morocco, UK, Algeria, Turkey',
     pvcType: 'Flexible PVC',
     wasteType: 'Cables',
-    totalQuantityTonnes: 11594
+    totalQuantityTonnes: 0
   };
 
   // Downward arrow to Export Circle 1
@@ -908,7 +908,7 @@ export function renderValueChainMassFlowDiagram(dataset: CountryPCWIDataset): st
   ctx.font = '400 10px "Segoe UI", Arial, sans-serif';
   ctx.fillText('Cables', 870, 533);
   ctx.fillText(
-    `${fmtSpace(dataset.card3.q3_10_massBalance[0]?.landfillingTonnes || 15000)} t`,
+    `${fmtSpace(dataset.card3.q3_10_massBalance[0]?.landfillingTonnes || 0)} t`,
     870,
     546
   );
@@ -916,7 +916,7 @@ export function renderValueChainMassFlowDiagram(dataset: CountryPCWIDataset): st
   ctx.fillText('OTHER', 870, 568);
   ctx.font = '400 10px "Segoe UI", Arial, sans-serif';
   ctx.fillText(
-    `${fmtSpace(dataset.card3.q3_10_massBalance[3]?.landfillingTonnes || 3000)} t`,
+    `${fmtSpace(dataset.card3.q3_10_massBalance[3]?.landfillingTonnes || 0)} t`,
     870,
     581
   );

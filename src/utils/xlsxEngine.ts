@@ -74,7 +74,7 @@ export async function parseSubmissionFormXlsx(
     }
   }
 
-  // Inspect Question Card 3 for the 50,000 vs 5,000 anomaly and Timeline #VALUE!
+  // Inspect Question Card 3 for recycling-vs-total anomalies and Timeline #VALUE!
   if (wb.Sheets['Question Card 3']) {
     const rows = XLSX.utils.sheet_to_json<any[]>(wb.Sheets['Question Card 3'], { header: 1 });
     rows.forEach((row, idx) => {
@@ -87,11 +87,12 @@ export async function parseSubmissionFormXlsx(
           );
         }
       }
-      if (row && String(row[1] ?? '').trim() === 'CABLES' && Number(row[6]) === 33000) {
+      if (row && String(row[1] ?? '').trim() === 'CABLES') {
+        const total = Number(row[6] || 0);
         const sumOut = Number(row[7] || 0) + Number(row[8] || 0) + Number(row[9] || 0);
-        if (sumOut !== 33000) {
+        if (total > 0 && sumOut !== total) {
           anomaliesDetected.push(
-            `Question Card 3 (Row ${idx + 1}): "CABLES" total (33,000 t/a) exceeds output destination sum (${sumOut.toLocaleString()} t/a) by ${(33000 - sumOut).toLocaleString()} t/a.`
+            `Question Card 3 (Row ${idx + 1}): "CABLES" total (${total.toLocaleString()} t/a) exceeds output destination sum (${sumOut.toLocaleString()} t/a) by ${(total - sumOut).toLocaleString()} t/a.`
           );
         }
       }
@@ -170,10 +171,46 @@ export function exportCountryToXlsx(dataset: CountryPCWIDataset): void {
     ['KEY MASS-BALANCE METRICS (TONNES / YEAR)', 'Rigid PVC (t/a)', 'Flexible PVC (t/a)', 'Both / Mixed (t/a)', 'Total (t/a)'],
     ['1. Post-Consumer PVC Waste Generated (Q1.2)', dataset.card1.totalRigidGenerated, dataset.card1.totalFlexibleGenerated, 0, dataset.card1.totalGenerated],
     ['2. Post-Consumer PVC Waste Collected Separately (Q2.4)', dataset.card2.totalRigidCollected, dataset.card2.totalFlexibleCollected, 0, dataset.card2.totalCollected],
-    ['3. Sorted & Pretreated in Country (Q3.10)', 11000, 33000, 3000, dataset.card3.totalSortedProcessed],
+    [
+      '3. Sorted & Pretreated in Country (Q3.10)',
+      dataset.card3.q3_10_massBalance
+        .filter((m) => m.pvcType === 'Rigid PVC')
+        .reduce((s, m) => s + (m.totalQuantityTonnes ?? 0), 0),
+      dataset.card3.q3_10_massBalance
+        .filter((m) => m.pvcType === 'Flexible PVC')
+        .reduce((s, m) => s + (m.totalQuantityTonnes ?? 0), 0),
+      dataset.card3.q3_10_massBalance
+        .filter((m) => m.pvcType === 'Both')
+        .reduce((s, m) => s + (m.totalQuantityTonnes ?? 0), 0),
+      dataset.card3.totalSortedProcessed
+    ],
     ['4a. Post-Consumer PVC Recycled Output (Q4.6/4.7)', dataset.card4.totalRigidRecycled, dataset.card4.totalFlexibleRecycled, dataset.card4.totalMixedRecycled, dataset.card4.totalRecycledOutput],
-    ['4b. Post-Consumer rPVC Converter Uptake (Q4.11)', 3430, 23194, 0, dataset.card4.totalUptakeTonnes],
-    ['5. Post-Consumer PVC Incinerated (Q5.5)', 0, 121, 23415, dataset.card5.totalIncineratedTonnes],
+    [
+      '4b. Post-Consumer rPVC Converter Uptake (Q4.11)',
+      dataset.card4.q4_11_uptake
+        .filter((u) => u.pvcType === 'Rigid PVC')
+        .reduce((s, u) => s + u.totalQuantityTonnes, 0),
+      dataset.card4.q4_11_uptake
+        .filter((u) => u.pvcType === 'Flexible PVC')
+        .reduce((s, u) => s + u.totalQuantityTonnes, 0),
+      dataset.card4.q4_11_uptake
+        .filter((u) => u.pvcType === 'Both')
+        .reduce((s, u) => s + u.totalQuantityTonnes, 0),
+      dataset.card4.totalUptakeTonnes
+    ],
+    [
+      '5. Post-Consumer PVC Incinerated (Q5.5)',
+      dataset.card5.q5_5_incineratedStreams
+        .filter((s) => s.pvcType === 'Rigid PVC')
+        .reduce((sum, s) => sum + (s.inputOrOutputTonnes ?? 0), 0),
+      dataset.card5.q5_5_incineratedStreams
+        .filter((s) => s.pvcType === 'Flexible PVC')
+        .reduce((sum, s) => sum + (s.inputOrOutputTonnes ?? 0), 0),
+      dataset.card5.q5_5_incineratedStreams
+        .filter((s) => s.pvcType === 'Both')
+        .reduce((sum, s) => sum + (s.inputOrOutputTonnes ?? 0), 0),
+      dataset.card5.totalIncineratedTonnes
+    ],
     ['6. Post-Consumer PVC Landfilled (Q6.4)', 0, 0, dataset.card6.q6_4_totalLandfilledEstimateTonnes, dataset.card6.q6_4_totalLandfilledEstimateTonnes],
     [],
     ['RECOTRACE BENCHMARK DATA', dataset.recoTrace.year],

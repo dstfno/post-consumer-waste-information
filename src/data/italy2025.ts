@@ -210,9 +210,9 @@ export const ITALY_2025_DATASET: CountryPCWIDataset = {
     gdpGrowthPct: '+0.6% (2025)',
     inflationPct: '1.8%',
     unemploymentPct: '6.5%',
-    virginPolymerKt2024: 5223,
+    virginPolymerKt2024: 4463,
     virginPolymerTrend: '-0.4% vs 2023; -3.0% expected in 2025',
-    recycledPolymerKt2024: 680,
+    recycledPolymerKt2024: 667,
     recycledPolymerTrend: '+5.3% vs 2023; slight decrease expected in 2025',
     mainPlasticApplications: [
       'Packaging (largest sector)',
@@ -225,7 +225,7 @@ export const ITALY_2025_DATASET: CountryPCWIDataset = {
     plasticIncineratedPct: 50,
     mainFlexiblePvcApps: 'Extrusion and compounds (cables, membranes, flooring, hose)',
     mainRigidPvcApps: 'Pipes and window/building profiles',
-    pvcRecycledKt2024: 87.5,
+    pvcRecycledKt2024: 71.8,
     constructionGrowth2024Pct: '+2.3%',
     constructionGrowth2025Pct: '-2.1%',
     polymerProcessedH1_2025Trend: '-1.0% reduction in quantity processed (H1 2025)',
@@ -247,10 +247,10 @@ export const ITALY_2025_DATASET: CountryPCWIDataset = {
   },
   recoTrace: {
     year: 2024,
-    recyclingInputTonnes: 83010,
-    recyclingOutputTonnes: 87064,
-    convertingInputTonnes: 29315,
-    convertingOutputTonnes: 29242,
+    recyclingInputTonnes: 92042,
+    recyclingOutputTonnes: 74057,
+    convertingInputTonnes: 29652,
+    convertingOutputTonnes: 27058,
     topEndApplication: 'Pipes & Building/Construction',
     preConsumerSharePct: 71,
     postConsumerSharePct: 29,
@@ -268,18 +268,18 @@ export const ITALY_2025_DATASET: CountryPCWIDataset = {
       { label: 'Other Streams', pct: 7, pvcType: 'Both' }
     ],
     endApplicationBreakdown: [
-      { label: 'Building & Construction - Other', tonnes: 15894, pct: 54 },
-      { label: 'Pipes', tonnes: 7099, pct: 24 },
-      { label: 'Windows and Profiles', tonnes: 3647, pct: 12 },
-      { label: 'Traffic Management', tonnes: 2602, pct: 9 }
+      { label: 'Building & Construction - Other', tonnes: 15504, pct: 54 },
+      { label: 'Pipes', tonnes: 6083, pct: 24 },
+      { label: 'Windows and Profiles', tonnes: 3038, pct: 12 },
+      { label: 'Traffic Management', tonnes: 2076, pct: 9 }
     ],
     ytdPeriodLabel: 'May 2025 YTD',
-    ytdRecyclingTotalTonnes: 6779,
-    ytdRecyclingForecastTonnes: 90000,
-    ytdRecyclingPreConsumerTonnes: 5488,
-    ytdRecyclingPostConsumerTonnes: 1291,
-    ytdConvertingTotalTonnes: 508,
-    ytdConvertingForecastTonnes: 50000,
+    ytdRecyclingTotalTonnes: 8108,
+    ytdRecyclingForecastTonnes: 93147,
+    ytdRecyclingPreConsumerTonnes: 4406,
+    ytdRecyclingPostConsumerTonnes: 1204,
+    ytdConvertingTotalTonnes: 407,
+    ytdConvertingForecastTonnes: 59823,
     ytdExplanation: 'YTD figures appear low due to the semester data-entry rule. Recovinyl does not push companies prior to the June close; volumes increase sharply at the end of June when semester reporting is requested (95% of target reached last year).',
     sectorOutlooks: [
       { sector: 'Profiles', outlook: '10% higher than previous year — positive signal, though early to project through year-end.' },
@@ -300,24 +300,24 @@ export const ITALY_2025_DATASET: CountryPCWIDataset = {
       '7) Specialized industrial/commercial sector collectors (furniture, agricultural films, advertising/marketing companies)'
     ],
     q1_2_streams: [
-      { id: 'g-1', wasteType: 'B&C (Building & Construction)', pvcType: 'Rigid PVC', quantityTonnes: 115749, basis: 'Calculated', notes: 'Largest single post-consumer PVC waste stream in Italy (pipes, profiles, shutters)' },
-      { id: 'g-2', wasteType: 'RAEE (WEEE)', pvcType: 'Flexible PVC', quantityTonnes: 81900, basis: 'Evidence-based', notes: 'Primarily electrical cables & wiring insulation from WEEE streams' },
-      { id: 'g-3', wasteType: 'NON-SORTED URBAN WASTE', pvcType: 'Flexible PVC', quantityTonnes: 23415, pptxDiagramTonnes: 24415, basis: 'Calculated', notes: 'Note: Listed as 23,415 t in Q1.2, and 24,415 t in mass flow diagram' },
-      { id: 'g-4', wasteType: 'LARGE URBAN WASTE', pvcType: 'Rigid PVC', quantityTonnes: 19068, basis: 'Evidence-based', notes: 'Bulky municipal rigid PVC waste (Ingombranti)' },
-      { id: 'g-5', wasteType: 'ADVERTISING (Banners, Coated Fabric)', pvcType: 'Flexible PVC', quantityTonnes: 14500, basis: 'Educated estimation' },
-      { id: 'g-6', wasteType: 'FURNITURE (Fornitures)', pvcType: 'Rigid PVC', quantityTonnes: 13650, basis: 'Educated estimation' },
-      { id: 'g-7', wasteType: 'AGRICULTURE (Films & Irrigation)', pvcType: 'Flexible PVC', quantityTonnes: 10500, basis: 'Educated estimation' },
-      { id: 'g-8', wasteType: 'ADVERTISING (Rigid Sheets/Signage)', pvcType: 'Rigid PVC', quantityTonnes: 8850, basis: 'Educated estimation' },
-      { id: 'g-9', wasteType: 'TEXTILE', pvcType: 'Flexible PVC', quantityTonnes: 5700, basis: 'Educated estimation' },
-      { id: 'g-10', wasteType: 'PLASTIC LARGE URBAN WASTE', pvcType: 'Rigid PVC', quantityTonnes: 5464, basis: 'Evidence-based' },
-      { id: 'g-11', wasteType: 'ELV CABLE (Automotive)', pvcType: 'Flexible PVC', quantityTonnes: 4260, basis: 'Calculated' },
-      { id: 'g-12', wasteType: 'PACKAGING', pvcType: 'Flexible PVC', quantityTonnes: 3021, basis: 'Evidence-based' },
-      { id: 'g-13', wasteType: 'ELV COATED FABRIC (Automotive)', pvcType: 'Flexible PVC', quantityTonnes: 2921, basis: 'Calculated' },
-      { id: 'g-14', wasteType: 'MEDICAL', pvcType: 'Flexible PVC', quantityTonnes: 121, basis: 'Evidence-based', notes: 'Subject to mandatory infectious medical waste incineration' }
+      { id: 'g-1', wasteType: 'B&C (Building & Construction)', pvcType: 'Rigid PVC', quantityTonnes: 132863, basis: 'Calculated', notes: 'Largest single post-consumer PVC waste stream in Italy (pipes, profiles, shutters)' },
+      { id: 'g-2', wasteType: 'RAEE (WEEE)', pvcType: 'Flexible PVC', quantityTonnes: 74010, basis: 'Evidence-based', notes: 'Primarily electrical cables & wiring insulation from WEEE streams' },
+      { id: 'g-3', wasteType: 'NON-SORTED URBAN WASTE', pvcType: 'Flexible PVC', quantityTonnes: 26715, pptxDiagramTonnes: 23709, basis: 'Calculated', notes: 'Note: Q1.2 quantity and mass-flow diagram figure may differ slightly (synthetic demo data)' },
+      { id: 'g-4', wasteType: 'LARGE URBAN WASTE', pvcType: 'Rigid PVC', quantityTonnes: 18244, basis: 'Evidence-based', notes: 'Bulky municipal rigid PVC waste (Ingombranti)' },
+      { id: 'g-5', wasteType: 'ADVERTISING (Banners, Coated Fabric)', pvcType: 'Flexible PVC', quantityTonnes: 11670, basis: 'Educated estimation' },
+      { id: 'g-6', wasteType: 'FURNITURE (Fornitures)', pvcType: 'Rigid PVC', quantityTonnes: 11430, basis: 'Educated estimation' },
+      { id: 'g-7', wasteType: 'AGRICULTURE (Films & Irrigation)', pvcType: 'Flexible PVC', quantityTonnes: 9342, basis: 'Educated estimation' },
+      { id: 'g-8', wasteType: 'ADVERTISING (Rigid Sheets/Signage)', pvcType: 'Rigid PVC', quantityTonnes: 8455, basis: 'Educated estimation' },
+      { id: 'g-9', wasteType: 'TEXTILE', pvcType: 'Flexible PVC', quantityTonnes: 5418, basis: 'Educated estimation' },
+      { id: 'g-10', wasteType: 'PLASTIC LARGE URBAN WASTE', pvcType: 'Rigid PVC', quantityTonnes: 6586, basis: 'Evidence-based' },
+      { id: 'g-11', wasteType: 'ELV CABLE (Automotive)', pvcType: 'Flexible PVC', quantityTonnes: 3398, basis: 'Calculated' },
+      { id: 'g-12', wasteType: 'PACKAGING', pvcType: 'Flexible PVC', quantityTonnes: 3481, basis: 'Evidence-based' },
+      { id: 'g-13', wasteType: 'ELV COATED FABRIC (Automotive)', pvcType: 'Flexible PVC', quantityTonnes: 2386, basis: 'Calculated' },
+      { id: 'g-14', wasteType: 'MEDICAL', pvcType: 'Flexible PVC', quantityTonnes: 127, basis: 'Evidence-based', notes: 'Subject to mandatory infectious medical waste incineration' }
     ],
-    totalRigidGenerated: 162781,
-    totalFlexibleGenerated: 146338,
-    totalGenerated: 309119
+    totalRigidGenerated: 170378,
+    totalFlexibleGenerated: 126859,
+    totalGenerated: 256970
   },
   card2: {
     q2_1_plasticRequirements: [
@@ -334,14 +334,14 @@ export const ITALY_2025_DATASET: CountryPCWIDataset = {
     ],
     q2_3_incentives: 'Packaging EPR (CONAI/COREPLA) producer fees cover the full chain from collection to granulate. RAEE collects WEEE cables free of charge, but no dedicated financial incentive is earmarked specifically for other rigid or flexible PVC items.',
     q2_4_collectedStreams: [
-      { wasteType: 'CABLES', pvcType: 'Flexible PVC', quantityTonnes: 34311 },
-      { wasteType: 'B&C (Rigid profiles, windows, pipes)', pvcType: 'Rigid PVC', quantityTonnes: 7380 },
-      { wasteType: 'LARGE URBAN WASTE', pvcType: 'Rigid PVC', quantityTonnes: 240 },
-      { wasteType: 'ADVERTISING (Banners, sheets)', pvcType: 'Flexible PVC', quantityTonnes: 99 }
+      { wasteType: 'CABLES', pvcType: 'Flexible PVC', quantityTonnes: 37367 },
+      { wasteType: 'B&C (Rigid profiles, windows, pipes)', pvcType: 'Rigid PVC', quantityTonnes: 6068 },
+      { wasteType: 'LARGE URBAN WASTE', pvcType: 'Rigid PVC', quantityTonnes: 204 },
+      { wasteType: 'ADVERTISING (Banners, sheets)', pvcType: 'Flexible PVC', quantityTonnes: 116 }
     ],
-    totalRigidCollected: 7620,
-    totalFlexibleCollected: 34410,
-    totalCollected: 42030,
+    totalRigidCollected: 6246,
+    totalFlexibleCollected: 29508,
+    totalCollected: 35304,
     q2_6_exports: [
       {
         id: 'exp-2-1',
@@ -351,7 +351,7 @@ export const ITALY_2025_DATASET: CountryPCWIDataset = {
         destinationCountries: '— (Domestic)',
         wasteCodes: '—',
         pvcType: 'Rigid PVC',
-        totalQuantityTonnes: 7380
+        totalQuantityTonnes: 6068
       },
       {
         id: 'exp-2-2',
@@ -361,8 +361,8 @@ export const ITALY_2025_DATASET: CountryPCWIDataset = {
         destinationCountries: 'Morocco, UK, Algeria, Turkey',
         wasteCodes: 'N.D.',
         pvcType: 'Flexible PVC',
-        totalQuantityTonnes: 11594,
-        notes: '11,594 t/a exported (calculated out of 34,311 t/a collected)'
+        totalQuantityTonnes: 10932,
+        notes: '10,932 t/a exported (calculated out of 37,367 t/a collected) — synthetic demo figures'
       },
       {
         id: 'exp-2-3',
@@ -372,7 +372,7 @@ export const ITALY_2025_DATASET: CountryPCWIDataset = {
         destinationCountries: '— (Domestic)',
         wasteCodes: '—',
         pvcType: 'Rigid PVC',
-        totalQuantityTonnes: 240
+        totalQuantityTonnes: 204
       },
       {
         id: 'exp-2-4',
@@ -382,7 +382,7 @@ export const ITALY_2025_DATASET: CountryPCWIDataset = {
         destinationCountries: 'France',
         wasteCodes: '08 01 11',
         pvcType: 'Flexible PVC',
-        totalQuantityTonnes: 99,
+        totalQuantityTonnes: 116,
         notes: 'Exported to France (e.g., Texyloop / Ferrari network)'
       }
     ],
@@ -485,11 +485,11 @@ export const ITALY_2025_DATASET: CountryPCWIDataset = {
         destinationCountries: '—',
         wasteCodes: '—',
         pvcType: 'Flexible PVC',
-        totalQuantityTonnes: 33000,
-        recyclingTonnes: 15000,
+        totalQuantityTonnes: 29297,
+        recyclingTonnes: 15373,
         incinerationTonnes: 0,
-        landfillingTonnes: 15000,
-        notes: '3,000 t/a difference between total (33,000 t) and sum of outputs (15,000 t recycling + 15,000 t landfill)'
+        landfillingTonnes: 15373,
+        notes: 'Unallocated gap between total (29,297 t) and sum of outputs (15,373 t recycling + 15,373 t landfill) — synthetic demo figures'
       },
       {
         id: 'mb-3-2',
@@ -499,8 +499,8 @@ export const ITALY_2025_DATASET: CountryPCWIDataset = {
         destinationCountries: '—',
         wasteCodes: '—',
         pvcType: 'Rigid PVC',
-        totalQuantityTonnes: 6000,
-        recyclingTonnes: 6000,
+        totalQuantityTonnes: 4862,
+        recyclingTonnes: 4862,
         incinerationTonnes: 0,
         landfillingTonnes: 0
       },
@@ -512,12 +512,12 @@ export const ITALY_2025_DATASET: CountryPCWIDataset = {
         destinationCountries: '—',
         wasteCodes: '—',
         pvcType: 'Rigid PVC',
-        totalQuantityTonnes: 5000,
-        recyclingTonnes: 5000,
-        xlsxRawRecyclingTonnes: 50000,
+        totalQuantityTonnes: 5646,
+        recyclingTonnes: 5646,
+        xlsxRawRecyclingTonnes: 59823,
         incinerationTonnes: 0,
         landfillingTonnes: 0,
-        notes: 'Reconciled to 5,000 t'
+        notes: 'Reconciled recycling quantity to match total (synthetic demo figures)'
       },
       {
         id: 'mb-3-4',
@@ -527,13 +527,13 @@ export const ITALY_2025_DATASET: CountryPCWIDataset = {
         destinationCountries: '—',
         wasteCodes: '—',
         pvcType: 'Both',
-        totalQuantityTonnes: 3000,
+        totalQuantityTonnes: 3078,
         recyclingTonnes: 0,
         incinerationTonnes: 0,
-        landfillingTonnes: 3000
+        landfillingTonnes: 3078
       }
     ],
-    totalSortedProcessed: 47000,
+    totalSortedProcessed: 46440,
     q3_11_stakeholders: 'No dedicated sorting-only stakeholder associations reported.',
     q3_12_costs: [
       { id: 'cost-3-1', stage: 'Sorting & Pretreatment', questionRef: '3.12', costType: 'MANUAL SORTING', pvcType: 'Rigid PVC', costDisplay: '25 €/ton', minEurPerTon: 25, maxEurPerTon: 25, remarks: 'Primarily performed by waste collectors' },
@@ -576,7 +576,7 @@ export const ITALY_2025_DATASET: CountryPCWIDataset = {
         technologyCategory: 'Mechanical recycling',
         automationOrSubTech: 'EXTRUSION / MOLDING',
         description: 'EXTRUSION / MOLDING',
-        inputOrOutputTonnes: 557,
+        inputOrOutputTonnes: 543,
         outputForm: 'Granule',
         typicalQuality: '< 1% impurities',
         mainImpurities: 'Other',
@@ -591,7 +591,7 @@ export const ITALY_2025_DATASET: CountryPCWIDataset = {
         technologyCategory: 'Mechanical recycling',
         automationOrSubTech: 'MICRONIZATION',
         description: 'MICRONIZATION',
-        inputOrOutputTonnes: 412,
+        inputOrOutputTonnes: 346,
         outputForm: 'Micronized',
         typicalQuality: '< 3% impurities (difficult income)',
         mainImpurities: 'Other',
@@ -606,7 +606,7 @@ export const ITALY_2025_DATASET: CountryPCWIDataset = {
         technologyCategory: 'Mechanical recycling',
         automationOrSubTech: 'MINERY TECH / FLOATATION',
         description: 'MINERY TECH / FLOATATION',
-        inputOrOutputTonnes: 7125,
+        inputOrOutputTonnes: 7814,
         outputForm: 'Grinded',
         typicalQuality: '< 1% impurities',
         mainImpurities: 'Other',
@@ -621,7 +621,7 @@ export const ITALY_2025_DATASET: CountryPCWIDataset = {
         technologyCategory: 'Mechanical recycling',
         automationOrSubTech: 'ELECTROSTATIC',
         description: 'ELECTROSTATIC',
-        inputOrOutputTonnes: 9110,
+        inputOrOutputTonnes: 9417,
         outputForm: 'Grinded',
         typicalQuality: '< 3% impurities',
         mainImpurities: 'Other',
@@ -636,17 +636,17 @@ export const ITALY_2025_DATASET: CountryPCWIDataset = {
         technologyCategory: 'Mechanical recycling',
         automationOrSubTech: 'NIR',
         description: 'NIR',
-        inputOrOutputTonnes: 3430,
+        inputOrOutputTonnes: 3014,
         outputForm: 'Grinded',
         typicalQuality: 'too various',
         mainImpurities: 'Other',
         priceEurPerTon: ''
       }
     ],
-    totalRigidRecycled: 3987, // 557 + 3430 per Slide 10 diagram
-    totalFlexibleRecycled: 7537, // 7125 + 412 per Slide 10 diagram
-    totalMixedRecycled: 9110, // Electrostatic Both
-    totalRecycledOutput: 20634,
+    totalRigidRecycled: 3817, // synthetic demo total for rigid recycled output
+    totalFlexibleRecycled: 7966, // synthetic demo total for flexible recycled output
+    totalMixedRecycled: 9417, // synthetic demo total for mixed/electrostatic recycled output
+    totalRecycledOutput: 20641,
     q4_9_exportStatus: 'Uptake/Conversion in the country (Further converting of PVC recyclate takes place in the country)',
     q4_10_exportNotes: [
       'NOTHING IS EXPORTED AS A WASTE',
@@ -658,12 +658,12 @@ export const ITALY_2025_DATASET: CountryPCWIDataset = {
         wasteType: 'CABLES',
         location: 'Uptake/Conversion in the country',
         pvcType: 'Flexible PVC',
-        totalQuantityTonnes: 22094,
+        totalQuantityTonnes: 22298,
         products: [
-          { product: 'insulation', tonnes: 12366 },
-          { product: 'traffic', tonnes: 2602 },
-          { product: 'boots', tonnes: 455 },
-          { product: 'sport flooring', tonnes: 728 }
+          { product: 'insulation', tonnes: 10705 },
+          { product: 'traffic', tonnes: 2076 },
+          { product: 'boots', tonnes: 554 },
+          { product: 'sport flooring', tonnes: 804 }
         ],
         unconvertedReasonOrFate: 'all is converted but in small products hardly treaceable'
       },
@@ -672,10 +672,10 @@ export const ITALY_2025_DATASET: CountryPCWIDataset = {
         wasteType: 'PIPES and OTHER RIGID',
         location: 'Uptake/Conversion in the country',
         pvcType: 'Rigid PVC',
-        totalQuantityTonnes: 3430,
+        totalQuantityTonnes: 3014,
         products: [
-          { product: 'pipes', tonnes: 1540 },
-          { product: 'agric. flooring', tonnes: 880 }
+          { product: 'pipes', tonnes: 1582 },
+          { product: 'agric. flooring', tonnes: 1061 }
         ],
         unconvertedReasonOrFate: ''
       },
@@ -684,9 +684,9 @@ export const ITALY_2025_DATASET: CountryPCWIDataset = {
         wasteType: 'FILM from AGRICULTURE',
         location: 'Uptake/Conversion in the country',
         pvcType: 'Flexible PVC',
-        totalQuantityTonnes: 500,
+        totalQuantityTonnes: 392,
         products: [
-          { product: 'film', tonnes: 500 }
+          { product: 'film', tonnes: 392 }
         ],
         unconvertedReasonOrFate: ''
       },
@@ -695,14 +695,14 @@ export const ITALY_2025_DATASET: CountryPCWIDataset = {
         wasteType: 'OTHER FLEX',
         location: 'Uptake/Conversion in the country',
         pvcType: 'Flexible PVC',
-        totalQuantityTonnes: 600,
+        totalQuantityTonnes: 598,
         products: [
           { product: 'N.D.', tonnes: 'N.D.' }
         ],
         unconvertedReasonOrFate: ''
       }
     ],
-    totalUptakeTonnes: 26624,
+    totalUptakeTonnes: 29714,
     q4_12_stakeholders: 'No stakeholders involved',
     q4_13_costs: [
       { id: 'cost-4-1', stage: 'Recycling', questionRef: '4.13', costType: 'EXTRUSION / MOLDING', pvcType: 'Both', costDisplay: '250/350 €/ton', minEurPerTon: 250, maxEurPerTon: 350, remarks: 'this process is often the end step of other recycling process and should be added to their costs' },
@@ -731,7 +731,7 @@ export const ITALY_2025_DATASET: CountryPCWIDataset = {
         technologyCategory: 'Water heating / Energy recovery',
         automationOrSubTech: 'NaHCO3, activated charcoal powder, NaOH (soda)',
         description: 'Mandatory thermal destruction of infectious hospital waste with dry/wet acid gas scrubbing',
-        inputOrOutputTonnes: 121,
+        inputOrOutputTonnes: 127,
         outputForm: 'Ash',
         typicalQuality: '100% of medical PVC stream',
         mainImpurities: 'Flue gas salts / fly ash',
@@ -746,14 +746,14 @@ export const ITALY_2025_DATASET: CountryPCWIDataset = {
         technologyCategory: 'Water heating / Energy recovery',
         automationOrSubTech: 'NaHCO3, activated charcoal powder, NaOH (soda)',
         description: 'Co-incineration in municipal Waste-to-Energy (WtE) plants (0.08% of total MSW incinerated)',
-        inputOrOutputTonnes: 23415,
+        inputOrOutputTonnes: 26715,
         outputForm: 'Ash',
         typicalQuality: '0.08% PVC concentration in MSW',
         mainImpurities: 'Bottom & fly ash',
         priceEurPerTon: 'Special landfill or salt recovery via SolvAir'
       }
     ],
-    totalIncineratedTonnes: 23536,
+    totalIncineratedTonnes: 26058,
     q5_6_facilitiesNote: 'No facilities voluntarily incinerate separated PVC in Italy. Approximately 55 incinerators process mixed/medical waste containing trace PVC.',
     q5_7_stakeholdersNote: 'No stakeholders involved since PVC is not voluntarily incinerated.',
     q5_8_costsNote: 'Not accepted voluntarily at WtE gates.',
@@ -766,21 +766,21 @@ export const ITALY_2025_DATASET: CountryPCWIDataset = {
     ],
     q6_2_pvcRequirements: 'D.Lgs. 36/2003, Art. 7 sets the calorific value limit at LHV < 13 kJ/kg. Because pure PVC has a heating value between 18 and 21 kJ/kg, pure PVC theoretically exceeds the limit, yet mixed pre-treated residues containing PVC are landfilled.',
     q6_3_disincentives: 'No PVC-specific disincentives beyond regional landfill taxes (ecotassa).',
-    q6_4_totalLandfilledEstimateTonnes: 169367,
+    q6_4_totalLandfilledEstimateTonnes: 178843,
     q6_5_provincialQuantities: [
-      { id: 'lf-p1', wasteType: 'MIXED', pvcType: 'Both', provinceOrCity: 'TORINO', quantityTonnes: 54510, lat: 45.0703, lng: 7.6869, remarks: 'Largest provincial landfill volume in Italy' },
-      { id: 'lf-p2', wasteType: 'MIXED', pvcType: 'Both', provinceOrCity: 'BRESCIA', quantityTonnes: 45657, lat: 45.5416, lng: 10.2118, remarks: 'Calculated assuming homogeneous waste distribution' },
-      { id: 'lf-p3', wasteType: 'MIXED', pvcType: 'Both', provinceOrCity: 'LIVORNO', quantityTonnes: 10924, lat: 43.5485, lng: 10.3106 },
-      { id: 'lf-p4', wasteType: 'MIXED', pvcType: 'Both', provinceOrCity: 'POTENZA', quantityTonnes: 10165, lat: 40.6404, lng: 15.8056 },
-      { id: 'lf-p5', wasteType: 'MIXED', pvcType: 'Both', provinceOrCity: 'ORISTANO', quantityTonnes: 6793, lat: 39.9062, lng: 8.5884 },
-      { id: 'lf-p6', wasteType: 'MIXED', pvcType: 'Both', provinceOrCity: 'UDINE', quantityTonnes: 5508, lat: 46.0711, lng: 13.2346 },
-      { id: 'lf-p7', wasteType: 'MIXED', pvcType: 'Both', provinceOrCity: 'GORIZIA', quantityTonnes: 2691, lat: 45.9402, lng: 13.6203 },
-      { id: 'lf-p8', wasteType: 'MIXED', pvcType: 'Both', provinceOrCity: 'PERUGIA', quantityTonnes: 1821, lat: 43.1107, lng: 12.3908 },
-      { id: 'lf-p9', wasteType: 'MIXED', pvcType: 'Both', provinceOrCity: 'MASSA CARRARA', quantityTonnes: 1518, lat: 44.0354, lng: 10.1393 },
-      { id: 'lf-p10', wasteType: 'MIXED', pvcType: 'Both', provinceOrCity: 'IMPERIA', quantityTonnes: 1446, lat: 43.8897, lng: 8.0394 },
-      { id: 'lf-p11', wasteType: 'MIXED', pvcType: 'Both', provinceOrCity: 'TERAMO', quantityTonnes: 1208, lat: 42.6589, lng: 13.7044 },
-      { id: 'lf-p12', wasteType: 'MIXED', pvcType: 'Both', provinceOrCity: 'LA SPEZIA', quantityTonnes: 627, lat: 44.1025, lng: 9.8241 },
-      { id: 'lf-p13', wasteType: 'MIXED', pvcType: 'Both', provinceOrCity: 'LODI', quantityTonnes: 26, lat: 45.3142, lng: 9.5032 }
+      { id: 'lf-p1', wasteType: 'MIXED', pvcType: 'Both', provinceOrCity: 'TORINO', quantityTonnes: 53484, lat: 45.0703, lng: 7.6869, remarks: 'Largest provincial landfill volume in Italy' },
+      { id: 'lf-p2', wasteType: 'MIXED', pvcType: 'Both', provinceOrCity: 'BRESCIA', quantityTonnes: 42354, lat: 45.5416, lng: 10.2118, remarks: 'Calculated assuming homogeneous waste distribution' },
+      { id: 'lf-p3', wasteType: 'MIXED', pvcType: 'Both', provinceOrCity: 'LIVORNO', quantityTonnes: 10969, lat: 43.5485, lng: 10.3106 },
+      { id: 'lf-p4', wasteType: 'MIXED', pvcType: 'Both', provinceOrCity: 'POTENZA', quantityTonnes: 11563, lat: 40.6404, lng: 15.8056 },
+      { id: 'lf-p5', wasteType: 'MIXED', pvcType: 'Both', provinceOrCity: 'ORISTANO', quantityTonnes: 5687, lat: 39.9062, lng: 8.5884 },
+      { id: 'lf-p6', wasteType: 'MIXED', pvcType: 'Both', provinceOrCity: 'UDINE', quantityTonnes: 5910, lat: 46.0711, lng: 13.2346 },
+      { id: 'lf-p7', wasteType: 'MIXED', pvcType: 'Both', provinceOrCity: 'GORIZIA', quantityTonnes: 2834, lat: 45.9402, lng: 13.6203 },
+      { id: 'lf-p8', wasteType: 'MIXED', pvcType: 'Both', provinceOrCity: 'PERUGIA', quantityTonnes: 1830, lat: 43.1107, lng: 12.3908 },
+      { id: 'lf-p9', wasteType: 'MIXED', pvcType: 'Both', provinceOrCity: 'MASSA CARRARA', quantityTonnes: 1818, lat: 44.0354, lng: 10.1393 },
+      { id: 'lf-p10', wasteType: 'MIXED', pvcType: 'Both', provinceOrCity: 'IMPERIA', quantityTonnes: 1655, lat: 43.8897, lng: 8.0394 },
+      { id: 'lf-p11', wasteType: 'MIXED', pvcType: 'Both', provinceOrCity: 'TERAMO', quantityTonnes: 1170, lat: 42.6589, lng: 13.7044 },
+      { id: 'lf-p12', wasteType: 'MIXED', pvcType: 'Both', provinceOrCity: 'LA SPEZIA', quantityTonnes: 585, lat: 44.1025, lng: 9.8241 },
+      { id: 'lf-p13', wasteType: 'MIXED', pvcType: 'Both', provinceOrCity: 'LODI', quantityTonnes: 22, lat: 45.3142, lng: 9.5032 }
     ],
     q6_7_stakeholdersNote: 'No stakeholders specifically advocating or managing PVC landfilling.',
     q6_8_costs: [
@@ -855,9 +855,9 @@ export const ITALY_2025_DATASET: CountryPCWIDataset = {
       card: 'Question Card 3',
       question: 'Q 3.10',
       title: '10x Typo in Multi-Utility Rigid PVC Recycling Tonnage',
-      xlsxValue: '50,000 t/a going to recycling (out of 5,000 t/a total)',
-      pptxValue: '5,000 t/a going to recycling (Slide 16)',
-      explanation: 'In Question Card 3 (Row 46 of the Excel Submission Form), "RIGID FROM MULTY UTILITIES" has Total Quantity = 5,000 t/a, but Quantity going to recycling = 50,000 t/a. Slide 16 of the PPTX corrected this to 5,000 t/a.',
+      xlsxValue: 'Raw spreadsheet recycling quantity ~10× total quantity (synthetic demo)',
+      pptxValue: 'Reconciled recycling quantity equals total stream quantity',
+      explanation: 'In Question Card 3, a multi-utility rigid stream had a 10× reporting typo in the recycling column versus total quantity. The live dataset uses the reconciled (lower) figure. All tonnages in this public demo are synthetic.',
       severity: 'high',
       resolved: true
     },
@@ -865,21 +865,21 @@ export const ITALY_2025_DATASET: CountryPCWIDataset = {
       id: 'disc-2',
       card: 'Question Card 3',
       question: 'Q 3.10',
-      title: 'Unallocated 3,000 t/a in Cable Sorting Mass Balance',
-      xlsxValue: '33,000 t/a Total → 15,000 t/a Recycled + 15,000 t/a Landfilled',
-      pptxValue: '33,000 t/a Total → 15,000 t/a Recycled + 15,000 t/a Landfilled (Slide 16)',
-      explanation: 'Both files report 33,000 t/a of cables processed in the country, with 15,000 t/a sent to recycling and 15,000 t/a to landfilling, leaving 3,000 t/a (likely copper/non-PVC residue or stock) unallocated across the output columns.',
+      title: 'Unallocated tonnes in Cable Sorting Mass Balance',
+      xlsxValue: '29,297 t/a Total → 15,373 t/a Recycled + 15,373 t/a Landfilled',
+      pptxValue: 'Same mass-balance pattern illustrated in the presentation flow',
+      explanation: 'Cable sorting shows an unallocated gap between total processed and the sum of recycling + landfilling outputs (likely non-PVC residue or stock). Figures are synthetic demo values, not real Recovinyl statistics.',
       severity: 'medium',
       resolved: false
     },
     {
       id: 'disc-3',
       card: 'Question Card 1',
-      question: 'Q 1.2 vs Slide 10',
-      title: 'Non-Sorted Urban Waste Label Mismatch (23,415 t vs 24,415 t)',
-      xlsxValue: '23,415 t/a (sums accurately to 146,338 t Flexible & 309,119 t Total)',
-      pptxValue: '24,415 t listed inside Slide 10 diagram box (while header shows 146,338 t)',
-      explanation: 'The Slide 10 mass-flow diagram text box lists "Non-sorted urban waste --> 24 415 t", whereas Question Card 1, Slide 11 chart, and Slide 23 (Incineration) all report 23,415 t/a.',
+      question: 'Q 1.2 vs mass-flow diagram',
+      title: 'Non-Sorted Urban Waste Label Mismatch (26,715 t vs 23,709 t)',
+      xlsxValue: '26,715 t/a in Q1.2 streams (synthetic)',
+      pptxValue: '23,709 t listed on the mass-flow diagram (synthetic)',
+      explanation: 'The mass-flow diagram figure for non-sorted urban waste differs slightly from the Q1.2 stream quantity. Both values in this public repo are synthetic/randomized for demo use.',
       severity: 'medium',
       resolved: true
     },
@@ -887,10 +887,10 @@ export const ITALY_2025_DATASET: CountryPCWIDataset = {
       id: 'disc-4',
       card: 'Question Card 4',
       question: 'Q 4.6/4.7 vs Q 4.11',
-      title: 'Domestic rPVC Output (20,634 t) vs. Converter Uptake (26,624 t) Gap',
-      xlsxValue: '20,634 t/a Recycled Output vs. 26,624 t/a Converter Uptake',
-      pptxValue: '20,634 t Recycled → 26,624 t Uptake + "Import X?? t" bubble (Slide 10)',
-      explanation: 'Converter uptake of post-consumer rPVC in Italy (26,624 t/a) exceeds reported domestic post-consumer recycling output (20,634 t/a) by 5,990 t/a, indicating unquantified rPVC imports or pre-/post-consumer classification overlap.',
+      title: 'Domestic rPVC Output (20,641 t) vs. Converter Uptake (29,714 t) Gap',
+      xlsxValue: '20,641 t/a Recycled Output vs. 29,714 t/a Converter Uptake',
+      pptxValue: 'Recycled output below converter uptake — import / pre-C blend residual',
+      explanation: 'Converter uptake of post-consumer rPVC exceeds reported domestic post-consumer recycling output in the demo dataset, illustrating an import / classification gap. Synthetic figures only.',
       severity: 'info',
       resolved: false
     },
@@ -898,10 +898,10 @@ export const ITALY_2025_DATASET: CountryPCWIDataset = {
       id: 'disc-5',
       card: 'Question Card 6',
       question: 'Q 6.4 vs Q 6.5',
-      title: 'National Landfill Estimate (169,367 t) vs. 13-Province Sum (142,894 t)',
-      xlsxValue: '169,367 t/a national estimate vs. 142,894 t/a across 13 listed provinces',
-      pptxValue: '169,367 t/a total; same 13 provinces listed on Slide 25',
-      explanation: 'The 13 reporting provinces (led by Torino 54,510 t and Brescia 45,657 t) account for 84.4% (142,894 t) of the estimated 169,367 t/a national total, leaving 26,473 t/a distributed across unmapped provinces.',
+      title: 'National Landfill Estimate vs. Provincial Breakdown Gap',
+      xlsxValue: '178,843 t/a national estimate vs. partial provincial sum (synthetic)',
+      pptxValue: 'Same national estimate with top provinces highlighted',
+      explanation: 'Listed provinces (led by Torino 53,484 t and Brescia 42,354 t in the demo set) do not cover 100% of the national landfill estimate; remaining tonnes are attributed to unmapped provinces. Synthetic demo data.',
       severity: 'info',
       resolved: false
     },
