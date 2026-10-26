@@ -13,7 +13,17 @@ npm run build
 npm run preview   # http://127.0.0.1:5180 serving dist/
 ```
 
-No environment variables are required for the default static build.
+### Site password (demo gate)
+
+Visitors see a password screen before the app. Default password is baked in for local/demo use; override at build time with:
+
+```bash
+VITE_SITE_PASSWORD=your-shared-secret npm run build
+```
+
+**This is a client-side demo gate only.** The expected password is compiled into the JavaScript bundle and can be bypassed by anyone who inspects the built assets. It is soft privacy for a public demo — **not** real authentication or access control.
+
+Unlock persists in `sessionStorage` for the browser tab (refresh stays unlocked; closing the tab requires the password again).
 
 ## Deploy on Vercel
 
@@ -23,7 +33,7 @@ No environment variables are required for the default static build.
    - Build Command: `npm run build`
    - Output Directory: `dist`
    - Install Command: `npm install`
-3. Leave Environment Variables empty (none required).
+3. Optional: set Environment Variable `VITE_SITE_PASSWORD` to override the default demo password (rebuild required after changing it).
 4. Click **Deploy**.
 
 `vercel.json` rewrites all routes to `/index.html` for SPA routing.
