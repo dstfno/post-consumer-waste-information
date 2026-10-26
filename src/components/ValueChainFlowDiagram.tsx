@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { CountryPCWIDataset, PvcType } from '../types';
 import {
   ArrowRight,
-  ArrowDown,
   AlertTriangle,
   CheckCircle2,
   Flame,
@@ -171,20 +170,6 @@ export const ValueChainFlowDiagram: React.FC<Props> = ({ dataset, onJumpToCard }
       {/* Main Interactive Flow Canvas (Matching Slide 10 Visual Layout) */}
       <div className="p-6 bg-slate-50/50 overflow-x-auto">
         <div className="min-w-[1040px] space-y-6">
-          {/* Top Import Bubble above Stage 3 */}
-          <div className="grid grid-cols-4 gap-5 items-end">
-            <div />
-            <div />
-            <div className="flex flex-col items-center">
-              <div className="px-4 py-2 rounded-full bg-recovinyl-light border-2 border-recovinyl-blue text-recovinyl-dark text-xs font-bold shadow-sm flex items-center gap-1.5">
-                <Globe className="w-3.5 h-3.5 text-recovinyl-blue" />
-                <span>Import: X?? t (Unmapped Feedstock)</span>
-              </div>
-              <ArrowDown className="w-5 h-5 text-recovinyl-blue my-1" />
-            </div>
-            <div />
-          </div>
-
           {/* Primary Horizontal Value Chain Row: 4 Main Stages */}
           <div className="grid grid-cols-4 gap-5 items-stretch relative">
             {/* STAGE 1: GENERATED */}
