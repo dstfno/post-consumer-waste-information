@@ -1,19 +1,12 @@
-import React, { useState } from 'react';
+import React, { useMemo, useState } from 'react';
 import { CountryPCWIDataset } from '../types';
-import {
-  Euro,
-  Cpu,
-  AlertOctagon,
-  TrendingUp,
-  Sliders,
-  CheckCircle2,
-  Scale,
-  Factory,
-  ArrowRight
-} from 'lucide-react';
 
 interface Props {
   dataset: CountryPCWIDataset;
+}
+
+function avgCost(min: number, max: number) {
+  return (min + max) / 2;
 }
 
 export const EconomicsAndTechMatrix: React.FC<Props> = ({ dataset }) => {
@@ -21,7 +14,6 @@ export const EconomicsAndTechMatrix: React.FC<Props> = ({ dataset }) => {
   const [divertTonnes, setDivertTonnes] = useState<number>(() =>
     Math.min(maxLandfillTonnes, Math.round(maxLandfillTonnes * 0.25))
   );
-  const [selectedTechCost, setSelectedTechCost] = useState<number>(70); // e.g. Electrostatic 70 €/t
 
   const allCosts = [
     ...dataset.card2.q2_8_costs,
@@ -30,14 +22,63 @@ export const EconomicsAndTechMatrix: React.FC<Props> = ({ dataset }) => {
     ...dataset.card6.q6_8_costs
   ];
 
-  // Landfill total stack: Transport + Pretreat + Gate + Tax (avg ~258 €/t)
-  const avgLandfillStackEur = 258;
+  const landfillCosts = dataset.card6.q6_8_costs;
+  const landfillMin = landfillCosts.reduce((s, c) => s + c.minEurPerTon, 0);
+  const landfillMax = landfillCosts.reduce((s, c) => s + c.maxEurPerTon, 0);
+  const avgLandfillStackEur = Math.round(
+    landfillCosts.reduce((s, c) => s + avgCost(c.minEurPerTon, c.maxEurPerTon), 0)
+  );
+
+  const sortingTechOptions = useMemo(() => {
+    const fromCard3 = dataset.card3.q3_12_costs.map((c) => ({
+      label: c.costType,
+      cost: Math.round(avgCost(c.minEurPerTon, c.maxEurPerTon))
+    }));
+    if (fromCard3.length > 0) return fromCard3.slice(0, 4);
+    return [
+      { label: 'Illustrative tech A', cost: 55 },
+      { label: 'Illustrative tech B', cost: 75 },
+      { label: 'Illustrative tech C', cost: 95 },
+      { label: 'Illustrative tech D', cost: 140 }
+    ];
+  }, [dataset.card3.q3_12_costs]);
+
+  const [selectedTechCost, setSelectedTechCost] = useState<number>(
+    () => sortingTechOptions[0]?.cost ?? 75
+  );
+
+  const manualSortAvg = Math.round(
+    avgCost(
+      dataset.card3.q3_12_costs.find((c) => /MANUAL/i.test(c.costType))?.minEurPerTon ?? 22,
+      dataset.card3.q3_12_costs.find((c) => /MANUAL/i.test(c.costType))?.maxEurPerTon ?? 28
+    )
+  );
+
+  const extrusion = dataset.card4.q4_13_costs.find((c) => /EXTRUSION/i.test(c.costType));
+  const sortingRecyclingMin = Math.min(
+    ...dataset.card3.q3_12_costs.map((c) => c.minEurPerTon),
+    ...dataset.card4.q4_13_costs.filter((c) => !/EXTRUSION/i.test(c.costType)).map((c) => c.minEurPerTon)
+  );
+  const sortingRecyclingMax = Math.max(
+    ...dataset.card3.q3_12_costs.map((c) => c.maxEurPerTon),
+    ...dataset.card4.q4_13_costs.filter((c) => !/EXTRUSION/i.test(c.costType)).map((c) => c.maxEurPerTon)
+  );
+
+  const barScale = Math.max(350, ...allCosts.map((c) => c.maxEurPerTon), 1);
+
   const avoidedLandfillMillions = ((divertTonnes * avgLandfillStackEur) / 1_000_000).toFixed(2);
-  const sortingRecyclingCostMillions = ((divertTonnes * (selectedTechCost + 25)) / 1_000_000).toFixed(2);
-  const netSystemSavingsMillions = (
-    (divertTonnes * (avgLandfillStackEur - (selectedTechCost + 25))) /
+  const sortingRecyclingCostMillions = (
+    (divertTonnes * (selectedTechCost + manualSortAvg)) /
     1_000_000
   ).toFixed(2);
+  const netSystemSavingsMillions = (
+    (divertTonnes * (avgLandfillStackEur - (selectedTechCost + manualSortAvg))) /
+    1_000_000
+  ).toFixed(2);
+
+  const rigidPricing = dataset.card4.q4_5_qualityAndPricingByStream.find((s) =>
+    /RIGID/i.test(s.stream)
+  );
 
   return (
     <div className="space-y-6">
@@ -51,20 +92,28 @@ export const EconomicsAndTechMatrix: React.FC<Props> = ({ dataset }) => {
             {dataset.flag} {dataset.countryName} — Economics (€/t), Impurity Thresholds & Technologies
           </h2>
           <p className="text-xs text-slate-600 mt-0.5">
-            Comparing collection, sorting, and recycling unit costs against mandatory landfill pretreatment, gate fees, and regional eco-taxes.
+            Illustrative demo unit costs derived from the synthetic dataset (not live market quotes).
           </p>
         </div>
 
         <div className="flex items-center gap-3">
           <div className="bg-recovinyl-light border border-recovinyl-blue/30 rounded-xl px-4 py-2.5 text-right">
             <div className="text-[11px] font-bold uppercase text-recovinyl-blue">Full Landfill Burden (Q6.8)</div>
-            <div className="text-lg font-black text-recovinyl-dark">205 – 310 €/ton</div>
-            <div className="text-[10px] text-recovinyl-blue">Transport + Pretreat + Gate + Tax</div>
+            <div className="text-lg font-black text-recovinyl-dark">
+              {landfillMin} – {landfillMax} €/ton
+            </div>
+            <div className="text-[10px] text-recovinyl-blue">Transport + Pretreat + Gate + Tax (demo)</div>
           </div>
           <div className="bg-recovinyl-greenLight border border-recovinyl-green/40 rounded-xl px-4 py-2.5 text-right">
             <div className="text-[11px] font-bold uppercase text-recovinyl-greenDark">Sorting + Tech Range (Q3/Q4)</div>
-            <div className="text-lg font-black text-recovinyl-greenDark">50 – 150 €/ton</div>
-            <div className="text-[10px] text-recovinyl-greenDark">+250–350 €/t if final extrusion</div>
+            <div className="text-lg font-black text-recovinyl-greenDark">
+              {sortingRecyclingMin} – {sortingRecyclingMax} €/ton
+            </div>
+            <div className="text-[10px] text-recovinyl-greenDark">
+              {extrusion
+                ? `+${extrusion.minEurPerTon}–${extrusion.maxEurPerTon} €/t if final extrusion`
+                : 'Synthetic demo ranges'}
+            </div>
           </div>
         </div>
       </div>
@@ -77,10 +126,15 @@ export const EconomicsAndTechMatrix: React.FC<Props> = ({ dataset }) => {
               Strategic Simulator
             </span>
             <h3 className="text-lg font-bold mt-1">
-              Landfill Diversion & Economic Arbitrage Calculator (Redirecting {dataset.card6.q6_4_totalLandfilledEstimateTonnes.toLocaleString()} t Landfilled PVC)
+              Landfill Diversion & Economic Arbitrage Calculator (Redirecting{' '}
+              {dataset.card6.q6_4_totalLandfilledEstimateTonnes.toLocaleString()} t Landfilled PVC)
             </h3>
             <p className="text-xs text-recovinyl-light">
-              In {dataset.countryName}, landfilling 1 tonne of pre-treated waste costs <b>205 to 310 €/t</b> (avg ~258 €/t). Simulate diverting tonnage from landfill into targeted sorting & recycling:
+              In this <b>synthetic demo</b> for {dataset.countryName}, landfilling 1 tonne of pre-treated waste is modelled at{' '}
+              <b>
+                {landfillMin} to {landfillMax} €/t
+              </b>{' '}
+              (avg ~{avgLandfillStackEur} €/t). Simulate diverting tonnage from landfill into targeted sorting & recycling:
             </p>
           </div>
         </div>
@@ -111,12 +165,7 @@ export const EconomicsAndTechMatrix: React.FC<Props> = ({ dataset }) => {
             <div>
               <label className="block text-xs font-semibold mb-1.5">Target Sorting / Separation Technology:</label>
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
-                {[
-                  { label: 'Flotation / Minery', cost: 50 },
-                  { label: 'Electrostatic (Hamos)', cost: 70 },
-                  { label: 'NIR Optical', cost: 90 },
-                  { label: 'Micronization', cost: 150 }
-                ].map((t) => (
+                {sortingTechOptions.map((t) => (
                   <button
                     key={t.label}
                     onClick={() => setSelectedTechCost(t.cost)}
@@ -138,12 +187,16 @@ export const EconomicsAndTechMatrix: React.FC<Props> = ({ dataset }) => {
             <div className="bg-white/10 border border-white/20 rounded-xl p-4">
               <div className="text-[11px] font-semibold text-recovinyl-light uppercase">Avoided Landfill Cost</div>
               <div className="text-2xl font-black text-white mt-1">€{avoidedLandfillMillions}M</div>
-              <div className="text-[11px] text-recovinyl-light mt-1">At ~258 €/t avg gate + tax + pretreat</div>
+              <div className="text-[11px] text-recovinyl-light mt-1">
+                At ~{avgLandfillStackEur} €/t avg gate + tax + pretreat
+              </div>
             </div>
             <div className="bg-white/10 border border-white/20 rounded-xl p-4">
               <div className="text-[11px] font-semibold text-recovinyl-light uppercase">Sorting + Tech Cost</div>
               <div className="text-2xl font-black text-white mt-1">€{sortingRecyclingCostMillions}M</div>
-              <div className="text-[11px] text-recovinyl-light mt-1">Manual (25€) + Tech ({selectedTechCost}€/t)</div>
+              <div className="text-[11px] text-recovinyl-light mt-1">
+                Manual ({manualSortAvg}€) + Tech ({selectedTechCost}€/t)
+              </div>
             </div>
             <div className="bg-recovinyl-green/20 border border-recovinyl-green/50 rounded-xl p-4">
               <div className="text-[11px] font-semibold text-recovinyl-greenLight uppercase">Net Chain Advantage</div>
@@ -177,7 +230,7 @@ export const EconomicsAndTechMatrix: React.FC<Props> = ({ dataset }) => {
               </thead>
               <tbody className="divide-y divide-slate-200 text-xs">
                 {allCosts.map((c) => {
-                  const widthPct = Math.min(100, Math.round((c.maxEurPerTon / 350) * 100));
+                  const widthPct = Math.min(100, Math.round((c.maxEurPerTon / barScale) * 100));
                   const barColor =
                     c.stage === 'Collection'
                       ? 'bg-recovinyl-blue'
@@ -226,7 +279,8 @@ export const EconomicsAndTechMatrix: React.FC<Props> = ({ dataset }) => {
               Impurity Concentration Thresholds & Market Pricing (€/t)
             </h3>
             <p className="text-xs text-slate-600 mb-4">
-              How legacy/undesirable impurities (copper, rubber gaskets, other plastics, UV weathering) dictate recyclability and market value in {dataset.countryName}:
+              How legacy/undesirable impurities (copper, rubber gaskets, other plastics, UV weathering) dictate
+              recyclability and market value in {dataset.countryName} (synthetic demo pricing):
             </p>
 
             <div className="space-y-3">
@@ -260,7 +314,15 @@ export const EconomicsAndTechMatrix: React.FC<Props> = ({ dataset }) => {
           </div>
 
           <div className="mt-4 p-3 rounded-xl bg-recovinyl-light/60 border border-recovinyl-blue/30 text-xs text-recovinyl-dark">
-            <b>Key Takeaway (Q4.5):</b> For Rigid B&C PVC, keeping impurities <b>&lt; 1%</b> unlocks <b>50–200 €/ton</b> value; exceeding 3% makes sorting cost higher than recyclate value. For Cables, <b>3–5% copper impurity</b> is a technical dead-zone unaccepted by recyclers.
+            <b>Key Takeaway (Q4.5):</b> For Rigid B&C PVC, keeping impurities low unlocks higher demo market value
+            {rigidPricing ? (
+              <>
+                {' '}
+                (<b>{rigidPricing.priceRange}</b>)
+              </>
+            ) : null}
+            ; high impurity levels make sorting cost outweigh recyclate value. Cable streams have a narrow copper
+            impurity window in this illustrative model.
           </div>
         </div>
       </div>
@@ -277,7 +339,8 @@ export const EconomicsAndTechMatrix: React.FC<Props> = ({ dataset }) => {
             </h3>
           </div>
           <span className="px-3 py-1 rounded-full bg-recovinyl-greenLight text-recovinyl-greenDark text-xs font-bold">
-            2030 Target: Double {dataset.countryCode === 'EU' ? 'European' : dataset.countryName} Volumes via Construction EPR
+            2030 Target: Double {dataset.countryCode === 'EU' ? 'European' : dataset.countryName} Volumes via
+            Construction EPR
           </span>
         </div>
 

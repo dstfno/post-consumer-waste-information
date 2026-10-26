@@ -78,8 +78,52 @@ export const GERMANY_2025_DATASET: CountryPCWIDataset = {
     ytdRecyclingPostConsumerTonnes: 49296,
     ytdConvertingTotalTonnes: 65481,
     ytdConvertingForecastTonnes: 134928,
-    ytdExplanation: 'Strong post-consumer window profile and pipe collection via Rewindo and KRV despite softer new-build construction activity.'
+    ytdExplanation: 'Demo note: German mid-year volumes in this synthetic dataset are illustrative. Collection schemes and construction cycles are generalised for UI demo only.'
   },
+  facilities: [
+    {
+      id: 'de-fac-1',
+      stage: 'Sorting & Pretreatment',
+      questionRef: '3.8',
+      name: 'NORD FENSTER SORT HUB DEMO GMBH',
+      pvcType: 'Rigid PVC',
+      city: 'Erfurt',
+      regionOrProvince: 'Germany',
+      lat: 51.0,
+      lng: 11.0,
+      sizeRaw: '180 empl - ~62M€ (demo)',
+      employees: 180,
+      turnoverEurMillions: 62
+    },
+    {
+      id: 'de-fac-2',
+      stage: 'Converting (rPVC)',
+      questionRef: '4.8',
+      name: 'RHEIN PROFILE LOOP DEMO GMBH',
+      pvcType: 'Rigid PVC',
+      city: 'Mainz',
+      regionOrProvince: 'Germany',
+      lat: 50.0,
+      lng: 8.3,
+      sizeRaw: '220 empl - ~95M€ (demo)',
+      employees: 220,
+      turnoverEurMillions: 95
+    },
+    {
+      id: 'de-fac-3',
+      stage: 'Collection',
+      questionRef: '2.5',
+      name: 'ELBE CABLE COLLECT DEMO GMBH',
+      pvcType: 'Flexible PVC',
+      city: 'Hamburg',
+      regionOrProvince: 'Germany',
+      lat: 53.6,
+      lng: 10.0,
+      sizeRaw: '90 empl - ~28M€ (demo)',
+      employees: 90,
+      turnoverEurMillions: 28
+    }
+  ],
   card1: {
     ...ITALY_2025_DATASET.card1,
     totalRigidGenerated: 240252,
@@ -136,7 +180,8 @@ export const GERMANY_2025_DATASET: CountryPCWIDataset = {
         relevantFeatures: 'Qualified electronic signatures, federal central coordination (ZKS-Abfall)',
         website: 'https://www.zks-abfall.de'
       }
-    ]
+    ],
+    q7_6_keySourcesContacts: 'Demo sources: fictional German collectors and sorters in this sample dataset (rrr.de@pcwi-demo.example).'
   },
   discrepancies: []
 };
@@ -223,6 +268,50 @@ export const FRANCE_2025_DATASET: CountryPCWIDataset = {
     ...ITALY_2025_DATASET.card6,
     q6_4_totalLandfilledEstimateTonnes: 112086
   },
+  facilities: [
+    {
+      id: 'fr-fac-1',
+      stage: 'Collection',
+      questionRef: '2.5',
+      name: 'RHONE B&C COLLECT DEMO SAS',
+      pvcType: 'Both',
+      city: 'Lyon',
+      regionOrProvince: 'France',
+      lat: 45.8,
+      lng: 4.8,
+      sizeRaw: '200 empl - ~78M€ (demo)',
+      employees: 200,
+      turnoverEurMillions: 78
+    },
+    {
+      id: 'fr-fac-2',
+      stage: 'Converting (rPVC)',
+      questionRef: '4.8',
+      name: 'SEINE FLOORING LOOP DEMO SAS',
+      pvcType: 'Flexible PVC',
+      city: 'Reims',
+      regionOrProvince: 'France',
+      lat: 49.3,
+      lng: 4.0,
+      sizeRaw: '160 empl - ~66M€ (demo)',
+      employees: 160,
+      turnoverEurMillions: 66
+    },
+    {
+      id: 'fr-fac-3',
+      stage: 'Sorting & Pretreatment',
+      questionRef: '3.8',
+      name: 'LOIRE PIPE SORT DEMO SAS',
+      pvcType: 'Rigid PVC',
+      city: 'Nantes',
+      regionOrProvince: 'France',
+      lat: 47.2,
+      lng: 1.6,
+      sizeRaw: '110 empl - ~41M€ (demo)',
+      employees: 110,
+      turnoverEurMillions: 41
+    }
+  ],
   card7: {
     ...ITALY_2025_DATASET.card7,
     q7_1_traceabilityTools: [
@@ -234,7 +323,8 @@ export const FRANCE_2025_DATASET: CountryPCWIDataset = {
         relevantFeatures: 'Real-time API integration, mandatory for hazardous/POPs and expanding across B&C EPR chains',
         website: 'https://trackdechets.beta.gouv.fr'
       }
-    ]
+    ],
+    q7_6_keySourcesContacts: 'Demo sources: fictional French collectors and EPR hubs in this sample dataset (rrr.fr@pcwi-demo.example).'
   },
   discrepancies: []
 };
@@ -608,77 +698,77 @@ export function buildEuropeanAggregatedDataset(
       remarks: `${c.regionGroup} (${c.rrrLead})`
     }));
 
-  // Combine facilities from IT + representative European facilities
+  // Combine facilities from IT + representative European demo facilities (fictional)
   const extraEuFacilities = [
     {
       id: 'eu-fac-de-1',
       stage: 'Sorting & Pretreatment' as const,
       questionRef: '3.8' as const,
-      name: 'REWINDO / VEKA UMWELTTECHNIK GMBH (DE)',
+      name: 'NORD FENSTER SORT HUB DEMO GMBH (DE)',
       pvcType: 'Rigid PVC' as const,
-      city: 'Behringen (Thuringia)',
+      city: 'Erfurt',
       regionOrProvince: 'Germany',
-      lat: 51.02,
-      lng: 10.51,
-      sizeRaw: '165 empl - 58,0M€',
-      employees: 165,
-      turnoverEurMillions: 58.0
+      lat: 51.0,
+      lng: 11.0,
+      sizeRaw: '180 empl - ~62M€ (demo)',
+      employees: 180,
+      turnoverEurMillions: 62
     },
     {
       id: 'eu-fac-de-2',
       stage: 'Converting (rPVC)' as const,
       questionRef: '4.8' as const,
-      name: 'PROFINE / KÖMMERLING RECYCLING (DE)',
+      name: 'RHEIN PROFILE LOOP DEMO GMBH (DE)',
       pvcType: 'Rigid PVC' as const,
-      city: 'Pirmasens',
+      city: 'Mainz',
       regionOrProvince: 'Germany',
-      lat: 49.2,
-      lng: 7.6,
-      sizeRaw: '310 empl - 112,0M€',
-      employees: 310,
-      turnoverEurMillions: 112.0
+      lat: 50.0,
+      lng: 8.3,
+      sizeRaw: '220 empl - ~95M€ (demo)',
+      employees: 220,
+      turnoverEurMillions: 95
     },
     {
       id: 'eu-fac-fr-1',
       stage: 'Collection' as const,
       questionRef: '2.5' as const,
-      name: 'VALOBAT / SUEZ B&C EPR HUB (FR)',
+      name: 'RHONE B&C COLLECT DEMO SAS (FR)',
       pvcType: 'Both' as const,
       city: 'Lyon',
       regionOrProvince: 'France',
-      lat: 45.76,
-      lng: 4.83,
-      sizeRaw: '240 empl - 85,0M€',
-      employees: 240,
-      turnoverEurMillions: 85.0
+      lat: 45.8,
+      lng: 4.8,
+      sizeRaw: '200 empl - ~78M€ (demo)',
+      employees: 200,
+      turnoverEurMillions: 78
     },
     {
       id: 'eu-fac-fr-2',
       stage: 'Converting (rPVC)' as const,
       questionRef: '4.8' as const,
-      name: 'TARKETT / GERFLOR FLOORING RECYCLING (FR)',
+      name: 'SEINE FLOORING LOOP DEMO SAS (FR)',
       pvcType: 'Flexible PVC' as const,
-      city: 'Sedan / Saint-Paul',
+      city: 'Reims',
       regionOrProvince: 'France',
-      lat: 49.7,
-      lng: 4.94,
-      sizeRaw: '190 empl - 74,0M€',
-      employees: 190,
-      turnoverEurMillions: 74.0
+      lat: 49.3,
+      lng: 4.0,
+      sizeRaw: '160 empl - ~66M€ (demo)',
+      employees: 160,
+      turnoverEurMillions: 66
     },
     {
       id: 'eu-fac-nl-1',
       stage: 'Converting (rPVC)' as const,
       questionRef: '4.8' as const,
-      name: 'WAVIN / BUREAULEIDING PIPE RECYCLING (NL)',
+      name: 'IJSSEL PIPE LOOP DEMO BV (NL)',
       pvcType: 'Rigid PVC' as const,
-      city: 'Hardenberg',
+      city: 'Zwolle',
       regionOrProvince: 'Netherlands',
-      lat: 52.57,
-      lng: 6.62,
-      sizeRaw: '220 empl - 92,0M€',
-      employees: 220,
-      turnoverEurMillions: 92.0
+      lat: 52.5,
+      lng: 6.1,
+      sizeRaw: '190 empl - ~84M€ (demo)',
+      employees: 190,
+      turnoverEurMillions: 84
     }
   ];
 
@@ -740,7 +830,7 @@ export function buildEuropeanAggregatedDataset(
       ytdConvertingTotalTonnes: Math.round(convertingOutputTonnes * 0.41),
       ytdConvertingForecastTonnes: Math.round(convertingOutputTonnes * 1.04),
       ytdExplanation:
-        'Aggregated European RecoTrace volumes across 12 reporting countries. Semester reporters submit H1 volumes after June close.',
+        'Demo note: aggregated European volumes across 12 countries in this synthetic dataset. Mid-year reporting cadence is illustrative only.',
       endApplicationBreakdown: [
         { label: 'Windows & Profiles', tonnes: Math.round(convertingOutputTonnes * 0.34), pct: 34 },
         { label: 'Pipes & Fittings', tonnes: Math.round(convertingOutputTonnes * 0.28), pct: 28 },
@@ -868,7 +958,7 @@ export function buildEuropeanAggregatedDataset(
           outputForm: 'Granules / Micronized Powder',
           typicalQuality: 'High purity (<0.5% impurity)',
           mainImpurities: 'Rubber gaskets, residual metal, non-PVC polymers',
-          priceEurPerTon: '120–240 €/t'
+          priceEurPerTon: '116 – 246 €/t'
         },
         {
           id: 'eu-r2',
@@ -883,7 +973,7 @@ export function buildEuropeanAggregatedDataset(
           outputForm: 'Regrind / Granules',
           typicalQuality: 'Medium-High (<1.5% impurity)',
           mainImpurities: 'PE/PP/PS/ABS co-polymers',
-          priceEurPerTon: '80–160 €/t'
+          priceEurPerTon: '88 – 147 €/t'
         },
         {
           id: 'eu-r3',
@@ -898,7 +988,7 @@ export function buildEuropeanAggregatedDataset(
           outputForm: 'Flexible rPVC Granules',
           typicalQuality: 'Copper <1% (Standard) to <0.1% (Premium)',
           mainImpurities: 'Copper/Al traces, XLPE/rubber',
-          priceEurPerTon: '60–150 €/t'
+          priceEurPerTon: '70 – 203 €/t'
         },
         {
           id: 'eu-r4',
@@ -913,7 +1003,7 @@ export function buildEuropeanAggregatedDataset(
           outputForm: 'Purified Regrind / Compound',
           typicalQuality: '>98.5% PVC purity',
           mainImpurities: 'Trace rubber / elastomers',
-          priceEurPerTon: '90–180 €/t'
+          priceEurPerTon: '106 – 177 €/t'
         }
       ],
       q4_11_uptake: [
@@ -980,7 +1070,7 @@ export function buildEuropeanAggregatedDataset(
           outputForm: 'Heat & Electricity + Neutralized Salt Residue',
           typicalQuality: 'MSW mixed fraction',
           mainImpurities: 'Chlorine neutralized via lime/bicarbonate scrubbing',
-          priceEurPerTon: '95–180 €/t gate fee'
+          priceEurPerTon: '102 – 210 €/t gate fee'
         },
         {
           id: 'eu-inc-2',
@@ -995,7 +1085,7 @@ export function buildEuropeanAggregatedDataset(
           outputForm: 'Process Steam & Power',
           typicalQuality: 'High-calorific sorting rejects',
           mainImpurities: 'Mixed plastics, wood, coatings',
-          priceEurPerTon: '110–210 €/t gate fee'
+          priceEurPerTon: '104 – 207 €/t gate fee'
         },
         {
           id: 'eu-inc-3',
@@ -1015,7 +1105,7 @@ export function buildEuropeanAggregatedDataset(
           outputForm: 'Thermal Destruction',
           typicalQuality: 'Clinical infectious waste',
           mainImpurities: 'Bio-hazard materials',
-          priceEurPerTon: '250–450 €/t'
+          priceEurPerTon: '210 – 442 €/t'
         }
       ]
     },

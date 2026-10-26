@@ -35,7 +35,7 @@ type SummarySubTab =
   | 'recotrace'
   | 'europe';
 
-const ACCOUNTS_STORAGE_KEY = 'recovinyl_pcwi_provider_accounts_v5';
+const ACCOUNTS_STORAGE_KEY = 'recovinyl_pcwi_provider_accounts_v6';
 
 export default function App() {
   const [accounts, setAccounts] = useState<ProviderAccount[]>(() => {

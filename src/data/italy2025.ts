@@ -84,110 +84,110 @@ export const PROJECT_TIMELINE_MILESTONES = [
 
 export const ITALY_FACILITIES: FacilityEntity[] = [
   // ================= Q2.5 COLLECTION FACILITIES (33) =================
-  { id: 'c-1', stage: 'Collection', questionRef: '2.5', name: 'ALIA SERVIZI AMBIENTALI SPA', pvcType: 'Rigid PVC', city: 'Firenze (FI)', regionOrProvince: 'Toscana', lat: 43.7696, lng: 11.2558, sizeRaw: '2407 empl - 479,43M€', employees: 2407, turnoverEurMillions: 479.43 },
-  { id: 'c-2', stage: 'Collection', questionRef: '2.5', name: 'BENASSI AMBIENTE SRL', pvcType: 'Both', city: 'Alba (CN)', regionOrProvince: 'Piemonte', lat: 44.7009, lng: 8.0353, sizeRaw: '20 empl - 7,05M€', employees: 20, turnoverEurMillions: 7.05 },
-  { id: 'c-3', stage: 'Collection', questionRef: '2.5', name: 'CASAGRANDE DARIO SRL', pvcType: 'Both', city: 'Cordignano (TV)', regionOrProvince: 'Veneto', lat: 45.9522, lng: 12.5152, sizeRaw: '15 empl - 5,60M€', employees: 15, turnoverEurMillions: 5.60 },
-  { id: 'c-4', stage: 'Collection', questionRef: '2.5', name: 'CAVALLARI SRL', pvcType: 'Rigid PVC', city: 'Ostra (AN)', regionOrProvince: 'Marche', lat: 43.6128, lng: 13.1582, sizeRaw: '101 empl - 21,98M€', employees: 101, turnoverEurMillions: 21.98 },
-  { id: 'c-5', stage: 'Collection', questionRef: '2.5', name: 'C.E.B. SRL – Centro Ecologico Biellese', pvcType: 'Both', city: 'Mottalciata (BI)', regionOrProvince: 'Piemonte', lat: 45.5028, lng: 8.2108, sizeRaw: '13 empl - 1,35M€', employees: 13, turnoverEurMillions: 1.35 },
-  { id: 'c-6', stage: 'Collection', questionRef: '2.5', name: 'ECO-RICICLI VERITAS S.R.L.', pvcType: 'Rigid PVC', city: 'Venezia (VE)', regionOrProvince: 'Veneto', lat: 45.4408, lng: 12.3155, sizeRaw: '199 empl - 42,24M€', employees: 199, turnoverEurMillions: 42.24 },
-  { id: 'c-7', stage: 'Collection', questionRef: '2.5', name: 'ECOLUCANA SRL', pvcType: 'Both', city: 'Muro Lucano (PZ)', regionOrProvince: 'Basilicata', lat: 40.7534, lng: 15.4881, sizeRaw: '7 empl - 4,68M€', employees: 7, turnoverEurMillions: 4.68 },
-  { id: 'c-8', stage: 'Collection', questionRef: '2.5', name: 'E.S.A. SRL', pvcType: 'Rigid PVC', city: 'Angri (SA)', regionOrProvince: 'Campania', lat: 40.7375, lng: 14.5694, sizeRaw: '1 empl - 142K€', employees: 1, turnoverEurMillions: 0.142 },
-  { id: 'c-9', stage: 'Collection', questionRef: '2.5', name: 'ETRA SPA', pvcType: 'Rigid PVC', city: 'Bassano del Grappa (VI)', regionOrProvince: 'Veneto', lat: 45.7666, lng: 11.7339, sizeRaw: '1023 empl - 194,7M€', employees: 1023, turnoverEurMillions: 194.70 },
-  { id: 'c-10', stage: 'Collection', questionRef: '2.5', name: 'FABIPLAST SRL', pvcType: 'Flexible PVC', city: 'Cerrione (BI)', regionOrProvince: 'Piemonte', lat: 45.4682, lng: 8.0748, sizeRaw: '11 empl - 6,17M€', employees: 11, turnoverEurMillions: 6.17 },
-  { id: 'c-11', stage: 'Collection', questionRef: '2.5', name: 'GHIRALDI SRL', pvcType: 'Both', city: 'Parma (PR)', regionOrProvince: 'Emilia-Romagna', lat: 44.8015, lng: 10.3279, sizeRaw: '44 empl - 9,5M€', employees: 44, turnoverEurMillions: 9.50 },
-  { id: 'c-12', stage: 'Collection', questionRef: '2.5', name: 'GRUPPO ECO IMBALLAGGI SRL', pvcType: 'Both', city: 'Aprilia (LT)', regionOrProvince: 'Lazio', lat: 41.5945, lng: 12.6422, sizeRaw: '1 empl - 693K€', employees: 1, turnoverEurMillions: 0.693 },
-  { id: 'c-13', stage: 'Collection', questionRef: '2.5', name: 'IL SOLCO COOPERATIVA SOCIALE', pvcType: 'Rigid PVC', city: 'Savignano sul Rubicone (FO)', regionOrProvince: 'Emilia-Romagna', lat: 44.0885, lng: 12.3932, sizeRaw: '176 empl - 11,7M€', employees: 176, turnoverEurMillions: 11.70 },
-  { id: 'c-14', stage: 'Collection', questionRef: '2.5', name: 'INNOCENTI SRL', pvcType: 'Rigid PVC', city: 'Tivoli (RM)', regionOrProvince: 'Lazio', lat: 41.9606, lng: 12.7989, sizeRaw: '7 empl - 4,75M€', employees: 7, turnoverEurMillions: 4.75 },
-  { id: 'c-15', stage: 'Collection', questionRef: '2.5', name: 'ISONTINA AMBIENTE SRL', pvcType: 'Rigid PVC', city: 'Gorizia (GO)', regionOrProvince: 'Friuli-Venezia Giulia', lat: 45.9402, lng: 13.6203, sizeRaw: '106 empl - 28,38M€', employees: 106, turnoverEurMillions: 28.38 },
-  { id: 'c-16', stage: 'Collection', questionRef: '2.5', name: 'LA CART SRL', pvcType: 'Both', city: 'Rimini (RN)', regionOrProvince: 'Emilia-Romagna', lat: 44.0678, lng: 12.5695, sizeRaw: '105 empl - 38,60M€', employees: 105, turnoverEurMillions: 38.60 },
-  { id: 'c-17', stage: 'Collection', questionRef: '2.5', name: 'LEONPLAST SRL', pvcType: 'Both', city: 'Pachino (SR)', regionOrProvince: 'Sicilia', lat: 36.7186, lng: 15.0906, sizeRaw: '14 empl - 2,02M€', employees: 14, turnoverEurMillions: 2.02 },
-  { id: 'c-18', stage: 'Collection', questionRef: '2.5', name: 'MANTINI SRL', pvcType: 'Both', city: 'Chieti (CH)', regionOrProvince: 'Abruzzo', lat: 42.3510, lng: 14.1675, sizeRaw: '104 empl - 14,63M€', employees: 104, turnoverEurMillions: 14.63 },
-  { id: 'c-19', stage: 'Collection', questionRef: '2.5', name: 'POLIRECUPERI SRL', pvcType: 'Rigid PVC', city: 'Cornaredo (MI)', regionOrProvince: 'Lombardia', lat: 45.4981, lng: 9.0249, sizeRaw: '20 empl - 12,07M€', employees: 20, turnoverEurMillions: 12.07 },
-  { id: 'c-20', stage: 'Collection', questionRef: '2.5', name: 'POLTRONIERI METALLI SAS', pvcType: 'Flexible PVC', city: 'Rivoli (TO)', regionOrProvince: 'Piemonte', lat: 45.0697, lng: 7.5177, sizeRaw: '5 empl - ND', employees: 5, turnoverEurMillions: null },
-  { id: 'c-21', stage: 'Collection', questionRef: '2.5', name: 'PROGETTO AMBIENTE SPA', pvcType: 'Rigid PVC', city: 'Aprilia (LT)', regionOrProvince: 'Lazio', lat: 41.5800, lng: 12.6500, sizeRaw: '143 empl - 14,07M€', employees: 143, turnoverEurMillions: 14.07 },
-  { id: 'c-22', stage: 'Collection', questionRef: '2.5', name: 'RECUPERI GENERALI MEDITERRANEI SRL', pvcType: 'Both', city: 'Sassari (SS)', regionOrProvince: 'Sardegna', lat: 40.7259, lng: 8.5557, sizeRaw: '13 empl - 2,11M€', employees: 13, turnoverEurMillions: 2.11 },
-  { id: 'c-23', stage: 'Collection', questionRef: '2.5', name: 'RECUPERI PUGLIESI SRL', pvcType: 'Both', city: 'Modugno (BA)', regionOrProvince: 'Puglia', lat: 41.0844, lng: 16.7788, sizeRaw: '3 empl - 752K€', employees: 3, turnoverEurMillions: 0.752 },
-  { id: 'c-24', stage: 'Collection', questionRef: '2.5', name: 'RECUPERI SUD SRL', pvcType: 'Flexible PVC', city: 'Modugno (BA)', regionOrProvince: 'Puglia', lat: 41.0900, lng: 16.7900, sizeRaw: '10 empl - 1,11M€', employees: 10, turnoverEurMillions: 1.11 },
-  { id: 'c-25', stage: 'Collection', questionRef: '2.5', name: 'REGGIO ECOLOGIA SRL', pvcType: 'Flexible PVC', city: 'Massenzatico (RE)', regionOrProvince: 'Emilia-Romagna', lat: 44.7376, lng: 10.6789, sizeRaw: '9 empl - 1,87M€', employees: 9, turnoverEurMillions: 1.87 },
-  { id: 'c-26', stage: 'Collection', questionRef: '2.5', name: 'RIECO SRL (A2A RECYCLING)', pvcType: 'Both', city: 'Nova Milanese (MI)', regionOrProvince: 'Lombardia', lat: 45.5882, lng: 9.1997, sizeRaw: '205 empl - 103,60M€', employees: 205, turnoverEurMillions: 103.60 },
-  { id: 'c-27', stage: 'Collection', questionRef: '2.5', name: 'R.M.P. SALARI SRL', pvcType: 'Rigid PVC', city: 'San Cesareo (RM)', regionOrProvince: 'Lazio', lat: 41.8191, lng: 12.8012, sizeRaw: '14 empl - 2,31M€', employees: 14, turnoverEurMillions: 2.31 },
-  { id: 'c-28', stage: 'Collection', questionRef: '2.5', name: 'SELPOWER AMBIENTE SRL', pvcType: 'Rigid PVC', city: 'Concorezzo (MI)', regionOrProvince: 'Lombardia', lat: 45.5898, lng: 9.3358, sizeRaw: '20 empl - 18,98M€', employees: 20, turnoverEurMillions: 18.98 },
-  { id: 'c-29', stage: 'Collection', questionRef: '2.5', name: 'SOGLIANO AMBIENTE SPA', pvcType: 'Both', city: 'Sogliano al Rubicone (FC)', regionOrProvince: 'Emilia-Romagna', lat: 44.0005, lng: 12.2994, sizeRaw: '69 empl - 45,68M€', employees: 69, turnoverEurMillions: 45.68 },
-  { id: 'c-30', stage: 'Collection', questionRef: '2.5', name: 'TECNOAMBIENTE SPA', pvcType: 'Both', city: 'San Miniato (PI)', regionOrProvince: 'Toscana', lat: 43.6815, lng: 10.8505, sizeRaw: '30 empl - 33,7M€', employees: 30, turnoverEurMillions: 33.70 },
-  { id: 'c-31', stage: 'Collection', questionRef: '2.5', name: 'TERRANOVA AMBIENTE SAS', pvcType: 'Flexible PVC', city: 'Gela (CL)', regionOrProvince: 'Sicilia', lat: 37.0669, lng: 14.2504, sizeRaw: '13 empl - 3,17M€', employees: 13, turnoverEurMillions: 3.17 },
-  { id: 'c-32', stage: 'Collection', questionRef: '2.5', name: 'VALECO SPA', pvcType: 'Flexible PVC', city: 'Aosta (AO)', regionOrProvince: 'Valle d’Aosta', lat: 45.7350, lng: 7.3131, sizeRaw: '9 empl - 2,3M€', employees: 9, turnoverEurMillions: 2.30 },
-  { id: 'c-33', stage: 'Collection', questionRef: '2.5', name: 'WEST MOLISE SRL', pvcType: 'Both', city: 'Termoli (CB)', regionOrProvince: 'Molise', lat: 41.9989, lng: 14.9939, sizeRaw: '7 empl - 855K€', employees: 7, turnoverEurMillions: 0.855 },
+  { id: 'c-1', stage: 'Collection', questionRef: '2.5', name: 'ALBA CIRCOLARE SRL', pvcType: 'Rigid PVC', city: 'Firenze (FI)', regionOrProvince: 'Toscana', lat: 43.7, lng: 11.3, sizeRaw: '2700 empl - ~461M€ (demo)', employees: 2700, turnoverEurMillions: 461 },
+  { id: 'c-2', stage: 'Collection', questionRef: '2.5', name: 'PO VALLEY RECUPERI S.P.A.', pvcType: 'Both', city: 'Alba (CN)', regionOrProvince: 'Piemonte', lat: 44.7, lng: 8.0, sizeRaw: '17 empl - ~8.3M€ (demo)', employees: 17, turnoverEurMillions: 8.3 },
+  { id: 'c-3', stage: 'Collection', questionRef: '2.5', name: 'TIRRENO FLUSSI SPA', pvcType: 'Both', city: 'Cordignano (TV)', regionOrProvince: 'Veneto', lat: 46.0, lng: 12.4, sizeRaw: '17 empl - ~5.3M€ (demo)', employees: 17, turnoverEurMillions: 5.3 },
+  { id: 'c-4', stage: 'Collection', questionRef: '2.5', name: 'ADRIATICO RACCOLTA COOP DEMO', pvcType: 'Rigid PVC', city: 'Ostra (AN)', regionOrProvince: 'Marche', lat: 43.7, lng: 13.2, sizeRaw: '90 empl - ~24.1M€ (demo)', employees: 90, turnoverEurMillions: 24.1 },
+  { id: 'c-5', stage: 'Collection', questionRef: '2.5', name: 'APENNINE WASTE HUB S.R.L.', pvcType: 'Both', city: 'Mottalciata (BI)', regionOrProvince: 'Piemonte', lat: 45.6, lng: 8.3, sizeRaw: '12 empl - ~1.5M€ (demo)', employees: 12, turnoverEurMillions: 1.5 },
+  { id: 'c-6', stage: 'Collection', questionRef: '2.5', name: 'LAGO MAGGIORE AMBIENTE SRL', pvcType: 'Rigid PVC', city: 'Venezia (VE)', regionOrProvince: 'Veneto', lat: 45.4, lng: 12.4, sizeRaw: '230 empl - ~49.3M€ (demo)', employees: 230, turnoverEurMillions: 49.3 },
+  { id: 'c-7', stage: 'Collection', questionRef: '2.5', name: 'VENEZIA COAST SERVICES S.P.A.', pvcType: 'Both', city: 'Muro Lucano (PZ)', regionOrProvince: 'Basilicata', lat: 40.8, lng: 15.5, sizeRaw: '6 empl - ~4.7M€ (demo)', employees: 6, turnoverEurMillions: 4.7 },
+  { id: 'c-8', stage: 'Collection', questionRef: '2.5', name: 'PADANA ECO LOGISTICA SPA', pvcType: 'Rigid PVC', city: 'Angri (SA)', regionOrProvince: 'Campania', lat: 40.7, lng: 14.5, sizeRaw: '1 empl - ~0.1M€ (demo)', employees: 1, turnoverEurMillions: 0.1 },
+  { id: 'c-9', stage: 'Collection', questionRef: '2.5', name: 'SUD ITALIA RACCOLTE COOP DEMO', pvcType: 'Rigid PVC', city: 'Bassano del Grappa (VI)', regionOrProvince: 'Veneto', lat: 45.8, lng: 11.8, sizeRaw: '1100 empl - ~191M€ (demo)', employees: 1100, turnoverEurMillions: 191 },
+  { id: 'c-10', stage: 'Collection', questionRef: '2.5', name: 'CENTRO ITALIA FLUSSI S.R.L.', pvcType: 'Flexible PVC', city: 'Cerrione (BI)', regionOrProvince: 'Piemonte', lat: 45.5, lng: 8.1, sizeRaw: '12 empl - ~5.8M€ (demo)', employees: 12, turnoverEurMillions: 5.8 },
+  { id: 'c-11', stage: 'Collection', questionRef: '2.5', name: 'NORD EST SERVIZI AMBIENTALI SRL', pvcType: 'Both', city: 'Parma (PR)', regionOrProvince: 'Emilia-Romagna', lat: 44.8, lng: 10.3, sizeRaw: '45 empl - ~10.8M€ (demo)', employees: 45, turnoverEurMillions: 10.8 },
+  { id: 'c-12', stage: 'Collection', questionRef: '2.5', name: 'OCCIDENTALE RICICLI S.P.A.', pvcType: 'Both', city: 'Aprilia (LT)', regionOrProvince: 'Lazio', lat: 41.6, lng: 12.7, sizeRaw: '1 empl - ~0.6M€ (demo)', employees: 1, turnoverEurMillions: 0.6 },
+  { id: 'c-13', stage: 'Collection', questionRef: '2.5', name: 'ETRUSCA COLLECTION SPA', pvcType: 'Rigid PVC', city: 'Savignano sul Rubicone (FO)', regionOrProvince: 'Emilia-Romagna', lat: 44.0, lng: 12.4, sizeRaw: '150 empl - ~11.4M€ (demo)', employees: 150, turnoverEurMillions: 11.4 },
+  { id: 'c-14', stage: 'Collection', questionRef: '2.5', name: 'LIGURE FLUSSI COOP DEMO', pvcType: 'Rigid PVC', city: 'Tivoli (RM)', regionOrProvince: 'Lazio', lat: 41.9, lng: 12.8, sizeRaw: '6 empl - ~4.8M€ (demo)', employees: 6, turnoverEurMillions: 4.8 },
+  { id: 'c-15', stage: 'Collection', questionRef: '2.5', name: 'SARDO AMBIENTE DEMO S.R.L.', pvcType: 'Rigid PVC', city: 'Gorizia (GO)', regionOrProvince: 'Friuli-Venezia Giulia', lat: 46.0, lng: 13.7, sizeRaw: '110 empl - ~30.7M€ (demo)', employees: 110, turnoverEurMillions: 30.7 },
+  { id: 'c-16', stage: 'Collection', questionRef: '2.5', name: 'SICULO RACCOLTA DEMO SRL', pvcType: 'Both', city: 'Rimini (RN)', regionOrProvince: 'Emilia-Romagna', lat: 44.0, lng: 12.6, sizeRaw: '120 empl - ~37.3M€ (demo)', employees: 120, turnoverEurMillions: 37.3 },
+  { id: 'c-17', stage: 'Collection', questionRef: '2.5', name: 'FOGLIA VERDE SRL DEMO S.P.A.', pvcType: 'Both', city: 'Pachino (SR)', regionOrProvince: 'Sicilia', lat: 36.8, lng: 15.2, sizeRaw: '13 empl - ~2.2M€ (demo)', employees: 13, turnoverEurMillions: 2.2 },
+  { id: 'c-18', stage: 'Collection', questionRef: '2.5', name: 'BLU CORRENTE SERVIZI SPA', pvcType: 'Both', city: 'Chieti (CH)', regionOrProvince: 'Abruzzo', lat: 42.3, lng: 14.1, sizeRaw: '120 empl - ~16M€ (demo)', employees: 120, turnoverEurMillions: 16 },
+  { id: 'c-19', stage: 'Collection', questionRef: '2.5', name: 'RUBICONE ECO COOP DEMO', pvcType: 'Rigid PVC', city: 'Cornaredo (MI)', regionOrProvince: 'Lombardia', lat: 45.4, lng: 9.1, sizeRaw: '18 empl - ~13.5M€ (demo)', employees: 18, turnoverEurMillions: 13.5 },
+  { id: 'c-20', stage: 'Collection', questionRef: '2.5', name: 'ARNO RACCOLTE S.R.L.', pvcType: 'Flexible PVC', city: 'Rivoli (TO)', regionOrProvince: 'Piemonte', lat: 45.1, lng: 7.5, sizeRaw: '5 empl - N.D. (demo)', employees: 5, turnoverEurMillions: null },
+  { id: 'c-21', stage: 'Collection', questionRef: '2.5', name: 'TEVERE FLUSSI SRL', pvcType: 'Rigid PVC', city: 'Aprilia (LT)', regionOrProvince: 'Lazio', lat: 41.6, lng: 12.7, sizeRaw: '150 empl - ~15.5M€ (demo)', employees: 150, turnoverEurMillions: 15.5 },
+  { id: 'c-22', stage: 'Collection', questionRef: '2.5', name: 'BRENTA SERVIZI S.P.A.', pvcType: 'Both', city: 'Sassari (SS)', regionOrProvince: 'Sardegna', lat: 40.7, lng: 8.6, sizeRaw: '12 empl - ~2M€ (demo)', employees: 12, turnoverEurMillions: 2 },
+  { id: 'c-23', stage: 'Collection', questionRef: '2.5', name: 'MINCIO AMBIENTE SPA', pvcType: 'Both', city: 'Modugno (BA)', regionOrProvince: 'Puglia', lat: 41.0, lng: 16.8, sizeRaw: '3 empl - ~0.7M€ (demo)', employees: 3, turnoverEurMillions: 0.7 },
+  { id: 'c-24', stage: 'Collection', questionRef: '2.5', name: 'OMBRONE RICICLI COOP DEMO', pvcType: 'Flexible PVC', city: 'Modugno (BA)', regionOrProvince: 'Puglia', lat: 41.2, lng: 16.9, sizeRaw: '9 empl - ~1M€ (demo)', employees: 9, turnoverEurMillions: 1 },
+  { id: 'c-25', stage: 'Collection', questionRef: '2.5', name: 'BASENTO DEMO S.R.L.', pvcType: 'Flexible PVC', city: 'Massenzatico (RE)', regionOrProvince: 'Emilia-Romagna', lat: 44.7, lng: 10.7, sizeRaw: '8 empl - ~1.8M€ (demo)', employees: 8, turnoverEurMillions: 1.8 },
+  { id: 'c-26', stage: 'Collection', questionRef: '2.5', name: 'OFANTO SERVIZI SRL', pvcType: 'Both', city: 'Nova Milanese (MI)', regionOrProvince: 'Lombardia', lat: 45.6, lng: 9.3, sizeRaw: '180 empl - ~89.6M€ (demo)', employees: 180, turnoverEurMillions: 89.6 },
+  { id: 'c-27', stage: 'Collection', questionRef: '2.5', name: 'IRPINIA FLUSSI S.P.A.', pvcType: 'Rigid PVC', city: 'San Cesareo (RM)', regionOrProvince: 'Lazio', lat: 41.8, lng: 12.8, sizeRaw: '13 empl - ~2.2M€ (demo)', employees: 13, turnoverEurMillions: 2.2 },
+  { id: 'c-28', stage: 'Collection', questionRef: '2.5', name: 'SALENTO RACCOLTA SPA', pvcType: 'Rigid PVC', city: 'Concorezzo (MI)', regionOrProvince: 'Lombardia', lat: 45.5, lng: 9.4, sizeRaw: '18 empl - ~21.2M€ (demo)', employees: 18, turnoverEurMillions: 21.2 },
+  { id: 'c-29', stage: 'Collection', questionRef: '2.5', name: 'GARGANO ECO COOP DEMO', pvcType: 'Both', city: 'Sogliano al Rubicone (FC)', regionOrProvince: 'Emilia-Romagna', lat: 44.0, lng: 12.3, sizeRaw: '70 empl - ~38M€ (demo)', employees: 70, turnoverEurMillions: 38 },
+  { id: 'c-30', stage: 'Collection', questionRef: '2.5', name: 'VALLE AOSTA DEMO S.R.L.', pvcType: 'Both', city: 'San Miniato (PI)', regionOrProvince: 'Toscana', lat: 43.7, lng: 10.9, sizeRaw: '30 empl - ~32.9M€ (demo)', employees: 30, turnoverEurMillions: 32.9 },
+  { id: 'c-31', stage: 'Collection', questionRef: '2.5', name: 'MOLISE CIRCOLARE SRL', pvcType: 'Flexible PVC', city: 'Gela (CL)', regionOrProvince: 'Sicilia', lat: 37.0, lng: 14.3, sizeRaw: '12 empl - ~2.9M€ (demo)', employees: 12, turnoverEurMillions: 2.9 },
+  { id: 'c-32', stage: 'Collection', questionRef: '2.5', name: 'ABRUZZO FLUSSI S.P.A.', pvcType: 'Flexible PVC', city: 'Aosta (AO)', regionOrProvince: 'Valle d’Aosta', lat: 45.7, lng: 7.4, sizeRaw: '10 empl - ~2.7M€ (demo)', employees: 10, turnoverEurMillions: 2.7 },
+  { id: 'c-33', stage: 'Collection', questionRef: '2.5', name: 'MARCHE RACCOLTE SPA', pvcType: 'Both', city: 'Termoli (CB)', regionOrProvince: 'Molise', lat: 42.1, lng: 15.1, sizeRaw: '6 empl - ~0.8M€ (demo)', employees: 6, turnoverEurMillions: 0.8 },
 
   // ================= Q3.8 SORTING & PRETREATMENT FACILITIES (19) =================
-  { id: 's-1', stage: 'Sorting & Pretreatment', questionRef: '3.8', name: 'ALIA MULTIUTILITY', pvcType: 'Rigid PVC', city: 'Firenze', regionOrProvince: 'Toscana', lat: 43.7800, lng: 11.2400, sizeRaw: '2618 empl - € 479.430.226', employees: 2618, turnoverEurMillions: 479.43 },
-  { id: 's-2', stage: 'Sorting & Pretreatment', questionRef: '3.8', name: 'AEMME LINEA AMBIENTE', pvcType: 'Rigid PVC', city: 'Magenta (MI)', regionOrProvince: 'Lombardia', lat: 45.4648, lng: 8.8824, sizeRaw: '341 empl - € 41.662.258', employees: 341, turnoverEurMillions: 41.66 },
-  { id: 's-3', stage: 'Sorting & Pretreatment', questionRef: '3.8', name: 'AMA ROMA', pvcType: 'Rigid PVC', city: 'Roma', regionOrProvince: 'Lazio', lat: 41.9028, lng: 12.4964, sizeRaw: '7663 empl - € 767.664.027', employees: 7663, turnoverEurMillions: 767.66 },
-  { id: 's-4', stage: 'Sorting & Pretreatment', questionRef: '3.8', name: 'ASIA NAPOLI', pvcType: 'Rigid PVC', city: 'Napoli', regionOrProvince: 'Campania', lat: 40.8518, lng: 14.2681, sizeRaw: 'N.D.', employees: null, turnoverEurMillions: null },
-  { id: 's-5', stage: 'Sorting & Pretreatment', questionRef: '3.8', name: 'AZIENDA SPECIALE CARLENTINI', pvcType: 'Rigid PVC', city: 'Carlentini (SR)', regionOrProvince: 'Sicilia', lat: 37.2756, lng: 15.0155, sizeRaw: 'N.D.', employees: null, turnoverEurMillions: null },
-  { id: 's-6', stage: 'Sorting & Pretreatment', questionRef: '3.8', name: 'CONTARINA SPA', pvcType: 'Rigid PVC', city: 'Treviso', regionOrProvince: 'Veneto', lat: 45.6669, lng: 12.2430, sizeRaw: '500 empl - € 97.133.147', employees: 500, turnoverEurMillions: 97.13 },
-  { id: 's-7', stage: 'Sorting & Pretreatment', questionRef: '3.8', name: 'ECO+ECO', pvcType: 'Rigid PVC', city: 'Venezia / Veneto', regionOrProvince: 'Veneto', lat: 45.4800, lng: 12.2000, sizeRaw: 'N.D.', employees: null, turnoverEurMillions: null },
-  { id: 's-8', stage: 'Sorting & Pretreatment', questionRef: '3.8', name: 'GESENU SPA', pvcType: 'Rigid PVC', city: 'Perugia', regionOrProvince: 'Umbria', lat: 43.1107, lng: 12.3908, sizeRaw: '500 empl - € 96.251.317', employees: 500, turnoverEurMillions: 96.25 },
-  { id: 's-9', stage: 'Sorting & Pretreatment', questionRef: '3.8', name: 'GRUPPO HERA', pvcType: 'Rigid PVC', city: 'Bologna', regionOrProvince: 'Emilia-Romagna, Marche', lat: 44.4949, lng: 11.3426, sizeRaw: '3045 empl - € 1.438.608.968', employees: 3045, turnoverEurMillions: 1438.61 },
-  { id: 's-10', stage: 'Sorting & Pretreatment', questionRef: '3.8', name: 'GRUPPO TEA', pvcType: 'Rigid PVC', city: 'Mantova', regionOrProvince: 'Lombardia', lat: 45.1564, lng: 10.7914, sizeRaw: '654 empl - € 451.000.000', employees: 654, turnoverEurMillions: 451.00 },
-  { id: 's-11', stage: 'Sorting & Pretreatment', questionRef: '3.8', name: 'IREN / AMIAT', pvcType: 'Rigid PVC', city: 'Torino / Reggio Emilia', regionOrProvince: 'Piemonte, Emilia-Romagna, Liguria', lat: 45.0703, lng: 7.6869, sizeRaw: '1158 empl - € 319.498.836', employees: 1158, turnoverEurMillions: 319.50 },
-  { id: 's-12', stage: 'Sorting & Pretreatment', questionRef: '3.8', name: 'M.E.A. ECOLOGIA', pvcType: 'Rigid PVC', city: 'Modena', regionOrProvince: 'Emilia-Romagna', lat: 44.6471, lng: 10.9252, sizeRaw: 'N.D.', employees: null, turnoverEurMillions: null },
-  { id: 's-13', stage: 'Sorting & Pretreatment', questionRef: '3.8', name: 'MARCHE MULTISERVIZI', pvcType: 'Rigid PVC', city: 'Pesaro', regionOrProvince: 'Marche', lat: 43.9098, lng: 12.9131, sizeRaw: '522 empl - € 130.733.028', employees: 522, turnoverEurMillions: 130.73 },
-  { id: 's-14', stage: 'Sorting & Pretreatment', questionRef: '3.8', name: 'MESSINASERVIZI BENE COMUNE', pvcType: 'Rigid PVC', city: 'Messina', regionOrProvince: 'Sicilia', lat: 38.1938, lng: 15.5540, sizeRaw: '661 empl - € 48.000.000', employees: 661, turnoverEurMillions: 48.00 },
-  { id: 's-15', stage: 'Sorting & Pretreatment', questionRef: '3.8', name: 'MULTISERVIZI MONTICELLI', pvcType: 'Rigid PVC', city: 'Monte San Biagio (LT)', regionOrProvince: 'Lazio', lat: 41.3489, lng: 13.3514, sizeRaw: 'N.D.', employees: null, turnoverEurMillions: null },
-  { id: 's-16', stage: 'Sorting & Pretreatment', questionRef: '3.8', name: 'REA SPA', pvcType: 'Rigid PVC', city: 'Rosignano Solvay (LI)', regionOrProvince: 'Toscana', lat: 43.3895, lng: 10.4384, sizeRaw: 'N.D.', employees: null, turnoverEurMillions: null },
-  { id: 's-17', stage: 'Sorting & Pretreatment', questionRef: '3.8', name: 'SEA-S', pvcType: 'Rigid PVC', city: 'Latina', regionOrProvince: 'Lazio', lat: 41.4676, lng: 12.9037, sizeRaw: '24 empl - € 134.635', employees: 24, turnoverEurMillions: 0.135 },
-  { id: 's-18', stage: 'Sorting & Pretreatment', questionRef: '3.8', name: 'SILEA SPA', pvcType: 'Rigid PVC', city: 'Lecco', regionOrProvince: 'Lombardia', lat: 45.8566, lng: 9.3977, sizeRaw: '113 empl - € 61.506.823', employees: 113, turnoverEurMillions: 61.51 },
-  { id: 's-19', stage: 'Sorting & Pretreatment', questionRef: '3.8', name: 'VERITAS SPA', pvcType: 'Rigid PVC', city: 'Venezia / Treviso', regionOrProvince: 'Veneto', lat: 45.4900, lng: 12.2500, sizeRaw: '19 empl - € 6.699.582', employees: 19, turnoverEurMillions: 6.70 },
+  { id: 's-1', stage: 'Sorting & Pretreatment', questionRef: '3.8', name: 'ALFA SORTING DEMO SRL', pvcType: 'Rigid PVC', city: 'Firenze', regionOrProvince: 'Toscana', lat: 43.8, lng: 11.3, sizeRaw: '2900 empl - ~444M€ (demo)', employees: 2900, turnoverEurMillions: 444 },
+  { id: 's-2', stage: 'Sorting & Pretreatment', questionRef: '3.8', name: 'BETA PRETREAT HUB S.P.A.', pvcType: 'Rigid PVC', city: 'Magenta (MI)', regionOrProvince: 'Lombardia', lat: 45.4, lng: 8.9, sizeRaw: '280 empl - ~42.6M€ (demo)', employees: 280, turnoverEurMillions: 42.6 },
+  { id: 's-3', stage: 'Sorting & Pretreatment', questionRef: '3.8', name: 'GAMMA NIR LINE SPA', pvcType: 'Rigid PVC', city: 'Roma', regionOrProvince: 'Lazio', lat: 41.9, lng: 12.5, sizeRaw: '8350 empl - ~637M€ (demo)', employees: 8350, turnoverEurMillions: 637 },
+  { id: 's-4', stage: 'Sorting & Pretreatment', questionRef: '3.8', name: 'DELTA FLOAT DEMO COOP DEMO', pvcType: 'Rigid PVC', city: 'Napoli', regionOrProvince: 'Campania', lat: 40.8, lng: 14.3, sizeRaw: 'N.D. (demo)', employees: null, turnoverEurMillions: null },
+  { id: 's-5', stage: 'Sorting & Pretreatment', questionRef: '3.8', name: 'EPSILON MULTIUTILITY SORT S.R.L.', pvcType: 'Rigid PVC', city: 'Carlentini (SR)', regionOrProvince: 'Sicilia', lat: 37.3, lng: 15.0, sizeRaw: 'N.D. (demo)', employees: null, turnoverEurMillions: null },
+  { id: 's-6', stage: 'Sorting & Pretreatment', questionRef: '3.8', name: 'ZETA GRANULAZIONE SRL', pvcType: 'Rigid PVC', city: 'Treviso', regionOrProvince: 'Veneto', lat: 45.7, lng: 12.2, sizeRaw: '480 empl - ~79.8M€ (demo)', employees: 480, turnoverEurMillions: 79.8 },
+  { id: 's-7', stage: 'Sorting & Pretreatment', questionRef: '3.8', name: 'ETA OPTICAL SORT S.P.A.', pvcType: 'Rigid PVC', city: 'Venezia / Veneto', regionOrProvince: 'Veneto', lat: 45.4, lng: 12.2, sizeRaw: 'N.D. (demo)', employees: null, turnoverEurMillions: null },
+  { id: 's-8', stage: 'Sorting & Pretreatment', questionRef: '3.8', name: 'THETA CABLE PREP SPA', pvcType: 'Rigid PVC', city: 'Perugia', regionOrProvince: 'Umbria', lat: 43.1, lng: 12.4, sizeRaw: '550 empl - ~92.8M€ (demo)', employees: 550, turnoverEurMillions: 92.8 },
+  { id: 's-9', stage: 'Sorting & Pretreatment', questionRef: '3.8', name: 'IOTA RIGID LINE COOP DEMO', pvcType: 'Rigid PVC', city: 'Bologna', regionOrProvince: 'Emilia-Romagna, Marche', lat: 44.4, lng: 11.3, sizeRaw: '3150 empl - ~1182M€ (demo)', employees: 3150, turnoverEurMillions: 1182 },
+  { id: 's-10', stage: 'Sorting & Pretreatment', questionRef: '3.8', name: 'KAPPA FLEX SORT S.R.L.', pvcType: 'Rigid PVC', city: 'Mantova', regionOrProvince: 'Lombardia', lat: 45.1, lng: 10.8, sizeRaw: '750 empl - ~409M€ (demo)', employees: 750, turnoverEurMillions: 409 },
+  { id: 's-11', stage: 'Sorting & Pretreatment', questionRef: '3.8', name: 'LAMBDA HUB DEMO SRL', pvcType: 'Rigid PVC', city: 'Torino / Reggio Emilia', regionOrProvince: 'Piemonte, Emilia-Romagna, Liguria', lat: 45.0, lng: 7.7, sizeRaw: '1050 empl - ~284M€ (demo)', employees: 1050, turnoverEurMillions: 284 },
+  { id: 's-12', stage: 'Sorting & Pretreatment', questionRef: '3.8', name: 'MU SEPARAZIONE S.P.A.', pvcType: 'Rigid PVC', city: 'Modena', regionOrProvince: 'Emilia-Romagna', lat: 44.7, lng: 10.9, sizeRaw: 'N.D. (demo)', employees: null, turnoverEurMillions: null },
+  { id: 's-13', stage: 'Sorting & Pretreatment', questionRef: '3.8', name: 'NU DENSITY LINE SPA', pvcType: 'Rigid PVC', city: 'Pesaro', regionOrProvince: 'Marche', lat: 43.9, lng: 12.9, sizeRaw: '450 empl - ~154M€ (demo)', employees: 450, turnoverEurMillions: 154 },
+  { id: 's-14', stage: 'Sorting & Pretreatment', questionRef: '3.8', name: 'XI BULKY SORT COOP DEMO', pvcType: 'Rigid PVC', city: 'Messina', regionOrProvince: 'Sicilia', lat: 38.2, lng: 15.5, sizeRaw: '600 empl - ~51M€ (demo)', employees: 600, turnoverEurMillions: 51 },
+  { id: 's-15', stage: 'Sorting & Pretreatment', questionRef: '3.8', name: 'OMICRON PREP DEMO S.R.L.', pvcType: 'Rigid PVC', city: 'Monte San Biagio (LT)', regionOrProvince: 'Lazio', lat: 41.4, lng: 13.4, sizeRaw: 'N.D. (demo)', employees: null, turnoverEurMillions: null },
+  { id: 's-16', stage: 'Sorting & Pretreatment', questionRef: '3.8', name: 'PI STREAM HUB SRL', pvcType: 'Rigid PVC', city: 'Rosignano Solvay (LI)', regionOrProvince: 'Toscana', lat: 43.4, lng: 10.5, sizeRaw: 'N.D. (demo)', employees: null, turnoverEurMillions: null },
+  { id: 's-17', stage: 'Sorting & Pretreatment', questionRef: '3.8', name: 'RHO MUNICIPAL SORT S.P.A.', pvcType: 'Rigid PVC', city: 'Latina', regionOrProvince: 'Lazio', lat: 41.4, lng: 12.8, sizeRaw: '25 empl - ~0.1M€ (demo)', employees: 25, turnoverEurMillions: 0.1 },
+  { id: 's-18', stage: 'Sorting & Pretreatment', questionRef: '3.8', name: 'SIGMA MULTI SORT SPA', pvcType: 'Rigid PVC', city: 'Lecco', regionOrProvince: 'Lombardia', lat: 45.8, lng: 9.4, sizeRaw: '130 empl - ~55.1M€ (demo)', employees: 130, turnoverEurMillions: 55.1 },
+  { id: 's-19', stage: 'Sorting & Pretreatment', questionRef: '3.8', name: 'TAU REGION HUB COOP DEMO', pvcType: 'Rigid PVC', city: 'Venezia / Treviso', regionOrProvince: 'Veneto', lat: 45.5, lng: 12.2, sizeRaw: '20 empl - ~6.5M€ (demo)', employees: 20, turnoverEurMillions: 6.5 },
 
   // ================= Q4.8 CONVERTING rPVC FACILITIES (8) =================
-  { id: 'r-1', stage: 'Converting (rPVC)', questionRef: '4.8', name: 'MASSETTI ECOPLAST S.R.L.S.', pvcType: 'Flexible PVC', city: 'Medolago (BG)', regionOrProvince: 'Lombardia', lat: 45.6708, lng: 9.4958, sizeRaw: '2 empl - 1,007M€', employees: 2, turnoverEurMillions: 1.007 },
-  { id: 'r-2', stage: 'Converting (rPVC)', questionRef: '4.8', name: 'OLGA S.R.L.', pvcType: 'Flexible PVC', city: 'Pratola Peligna (AQ)', regionOrProvince: 'Abruzzo', lat: 42.0992, lng: 13.8747, sizeRaw: '9 empl - 3,48M€', employees: 9, turnoverEurMillions: 3.48 },
-  { id: 'r-3', stage: 'Converting (rPVC)', questionRef: '4.8', name: 'ROMIPLAST S.R.L.', pvcType: 'Flexible PVC', city: 'Tavernelle di Panicale (PG)', regionOrProvince: 'Umbria', lat: 43.0056, lng: 12.1423, sizeRaw: '9 empl - 1,49M€', employees: 9, turnoverEurMillions: 1.49 },
-  { id: 'r-4', stage: 'Converting (rPVC)', questionRef: '4.8', name: 'TECNO POLIMERI S.R.L.', pvcType: 'Rigid PVC', city: 'Anagni (FR)', regionOrProvince: 'Lazio', lat: 41.7458, lng: 13.1519, sizeRaw: '5 empl - 0,938M€', employees: 5, turnoverEurMillions: 0.938 },
-  { id: 'r-5', stage: 'Converting (rPVC)', questionRef: '4.8', name: 'AGRICOW S.R.L.', pvcType: 'Flexible PVC', city: 'Carpenedolo (BS)', regionOrProvince: 'Lombardia', lat: 45.3653, lng: 10.4326, sizeRaw: '24 empl - 7,93M€', employees: 24, turnoverEurMillions: 7.93 },
-  { id: 'r-6', stage: 'Converting (rPVC)', questionRef: '4.8', name: 'GIOVANARDI S.N.C.', pvcType: 'Flexible PVC', city: 'Villimpenta (MN)', regionOrProvince: 'Lombardia', lat: 45.1481, lng: 11.0327, sizeRaw: 'N.D.', employees: null, turnoverEurMillions: null },
-  { id: 'r-7', stage: 'Converting (rPVC)', questionRef: '4.8', name: 'MONTIPLAST S.R.L.', pvcType: 'Rigid PVC', city: 'Pollenza (MC)', regionOrProvince: 'Marche', lat: 43.2682, lng: 13.3483, sizeRaw: '12 empl - 1,488M€', employees: 12, turnoverEurMillions: 1.488 },
-  { id: 'r-8', stage: 'Converting (rPVC)', questionRef: '4.8', name: 'TURIN CARTA S.R.L.', pvcType: 'Flexible PVC', city: 'S. Maurizio Canavese (TO)', regionOrProvince: 'Piemonte', lat: 45.2178, lng: 7.6311, sizeRaw: '15 empl - 4,529M€', employees: 15, turnoverEurMillions: 4.529 },
+  { id: 'r-1', stage: 'Converting (rPVC)', questionRef: '4.8', name: 'AURORA RIGID CONVERT SRL', pvcType: 'Flexible PVC', city: 'Medolago (BG)', regionOrProvince: 'Lombardia', lat: 45.7, lng: 9.4, sizeRaw: '2 empl - ~0.9M€ (demo)', employees: 2, turnoverEurMillions: 0.9 },
+  { id: 'r-2', stage: 'Converting (rPVC)', questionRef: '4.8', name: 'BORA FLEX COMPOUND S.P.A.', pvcType: 'Flexible PVC', city: 'Pratola Peligna (AQ)', regionOrProvince: 'Abruzzo', lat: 42.1, lng: 13.9, sizeRaw: '8 empl - ~3.2M€ (demo)', employees: 8, turnoverEurMillions: 3.2 },
+  { id: 'r-3', stage: 'Converting (rPVC)', questionRef: '4.8', name: 'CORONA MICRONIZE SPA', pvcType: 'Flexible PVC', city: 'Tavernelle di Panicale (PG)', regionOrProvince: 'Umbria', lat: 42.9, lng: 12.2, sizeRaw: '10 empl - ~1.3M€ (demo)', employees: 10, turnoverEurMillions: 1.3 },
+  { id: 'r-4', stage: 'Converting (rPVC)', questionRef: '4.8', name: 'DOMUS PIPE REUSE COOP DEMO', pvcType: 'Rigid PVC', city: 'Anagni (FR)', regionOrProvince: 'Lazio', lat: 41.7, lng: 13.2, sizeRaw: '5 empl - ~1.1M€ (demo)', employees: 5, turnoverEurMillions: 1.1 },
+  { id: 'r-5', stage: 'Converting (rPVC)', questionRef: '4.8', name: 'EOS PROFILE LOOP S.R.L.', pvcType: 'Flexible PVC', city: 'Carpenedolo (BS)', regionOrProvince: 'Lombardia', lat: 45.3, lng: 10.4, sizeRaw: '25 empl - ~8.4M€ (demo)', employees: 25, turnoverEurMillions: 8.4 },
+  { id: 'r-6', stage: 'Converting (rPVC)', questionRef: '4.8', name: 'FLORA CABLE COMPOUND SRL', pvcType: 'Flexible PVC', city: 'Villimpenta (MN)', regionOrProvince: 'Lombardia', lat: 45.1, lng: 11.0, sizeRaw: 'N.D. (demo)', employees: null, turnoverEurMillions: null },
+  { id: 'r-7', stage: 'Converting (rPVC)', questionRef: '4.8', name: 'GIANO RIGID DEMO S.P.A.', pvcType: 'Rigid PVC', city: 'Pollenza (MC)', regionOrProvince: 'Marche', lat: 43.3, lng: 13.3, sizeRaw: '13 empl - ~1.2M€ (demo)', employees: 13, turnoverEurMillions: 1.2 },
+  { id: 'r-8', stage: 'Converting (rPVC)', questionRef: '4.8', name: 'HELIO FLEX DEMO SPA', pvcType: 'Flexible PVC', city: 'S. Maurizio Canavese (TO)', regionOrProvince: 'Piemonte', lat: 45.2, lng: 7.6, sizeRaw: '14 empl - ~4.2M€ (demo)', employees: 14, turnoverEurMillions: 4.2 },
 
   // ================= Q6.6 LANDFILL OPERATORS (38) =================
-  { id: 'l-1', stage: 'Landfill Operator', questionRef: '6.6', name: 'A2A AMBIENTE S.P.A.', pvcType: 'Both', city: 'Cavaglià (BI)', regionOrProvince: 'Piemonte', lat: 45.4050, lng: 8.0928, sizeRaw: '1474 empl - 823M€', employees: 1474, turnoverEurMillions: 823.00 },
-  { id: 'l-2', stage: 'Landfill Operator', questionRef: '6.6', name: 'ACEA AMBIENTE S.R.L.', pvcType: 'Both', city: 'Orvieto (TR)', regionOrProvince: 'Umbria', lat: 42.7185, lng: 12.1108, sizeRaw: '277 empl - 128,2M€', employees: 277, turnoverEurMillions: 128.20 },
-  { id: 'l-3', stage: 'Landfill Operator', questionRef: '6.6', name: 'ACSEL SPA', pvcType: 'Both', city: 'Mattie (TO)', regionOrProvince: 'Piemonte', lat: 45.1181, lng: 7.1153, sizeRaw: '99 empl - 16,16M€', employees: 99, turnoverEurMillions: 16.16 },
-  { id: 'l-4', stage: 'Landfill Operator', questionRef: '6.6', name: 'AZ. MULTISERVIZI VALENZANA A.M.V. S.P.A.', pvcType: 'Both', city: 'Bassignana (AL)', regionOrProvince: 'Piemonte', lat: 45.0022, lng: 8.7319, sizeRaw: '2 empl - 0,903M€', employees: 2, turnoverEurMillions: 0.903 },
-  { id: 'l-5', stage: 'Landfill Operator', questionRef: '6.6', name: 'AZ. RIFIUTI ALESSANDRINA S.P.A.', pvcType: 'Both', city: 'Solero (AL)', regionOrProvince: 'Piemonte', lat: 44.9189, lng: 8.5081, sizeRaw: '42 empl - 18,9M€', employees: 42, turnoverEurMillions: 18.90 },
-  { id: 'l-6', stage: 'Landfill Operator', questionRef: '6.6', name: 'BERGAMO PULITA SRL', pvcType: 'Both', city: 'Cavernago (BG)', regionOrProvince: 'Lombardia', lat: 45.6350, lng: 9.7667, sizeRaw: 'N.D.', employees: null, turnoverEurMillions: null },
-  { id: 'l-7', stage: 'Landfill Operator', questionRef: '6.6', name: 'BERTOLO S.R.L.', pvcType: 'Both', city: 'Valvasone (PN)', regionOrProvince: 'Friuli-Venezia Giulia', lat: 46.0000, lng: 12.8667, sizeRaw: '46 empl - 8,37M€', employees: 46, turnoverEurMillions: 8.37 },
-  { id: 'l-8', stage: 'Landfill Operator', questionRef: '6.6', name: 'BETTONI S.P.A.', pvcType: 'Both', city: 'Travagliato (BS)', regionOrProvince: 'Lombardia', lat: 45.5236, lng: 10.0797, sizeRaw: '22 empl - 11,45M€', employees: 22, turnoverEurMillions: 11.45 },
-  { id: 'l-9', stage: 'Landfill Operator', questionRef: '6.6', name: 'C. E G. AMBIENTE SRL', pvcType: 'Both', city: 'Caravino (TO)', regionOrProvince: 'Piemonte', lat: 45.3983, lng: 7.9600, sizeRaw: 'N.D.', employees: null, turnoverEurMillions: null },
-  { id: 'l-10', stage: 'Landfill Operator', questionRef: '6.6', name: 'C.I.D.I.U. SPA', pvcType: 'Both', city: 'Pianezza (TO)', regionOrProvince: 'Piemonte', lat: 45.1072, lng: 7.5478, sizeRaw: '22 empl - 8,63M€', employees: 22, turnoverEurMillions: 8.63 },
-  { id: 'l-11', stage: 'Landfill Operator', questionRef: '6.6', name: 'CAVA PARADISO', pvcType: 'Both', city: 'Ghedi (BS)', regionOrProvince: 'Lombardia', lat: 45.4022, lng: 10.2783, sizeRaw: 'N.D.', employees: null, turnoverEurMillions: null },
-  { id: 'l-12', stage: 'Landfill Operator', questionRef: '6.6', name: 'COBETON SRL', pvcType: 'Both', city: 'Polcenigo (PN)', regionOrProvince: 'Friuli-Venezia Giulia', lat: 46.0289, lng: 12.5019, sizeRaw: '21 empl - 6,19M€', employees: 21, turnoverEurMillions: 6.19 },
-  { id: 'l-13', stage: 'Landfill Operator', questionRef: '6.6', name: 'COMUNE DI CAMINO', pvcType: 'Both', city: 'Camino (AL)', regionOrProvince: 'Piemonte', lat: 45.1583, lng: 8.2931, sizeRaw: 'N.D.', employees: null, turnoverEurMillions: null },
-  { id: 'l-14', stage: 'Landfill Operator', questionRef: '6.6', name: 'COMUNE DI CASALE MONFERRATO', pvcType: 'Both', city: 'Casale Monferrato (AL)', regionOrProvince: 'Piemonte', lat: 45.1333, lng: 8.4500, sizeRaw: 'N.D.', employees: null, turnoverEurMillions: null },
-  { id: 'l-15', stage: 'Landfill Operator', questionRef: '6.6', name: 'COMUNE DI GUBBIO', pvcType: 'Both', city: 'Gubbio (PG)', regionOrProvince: 'Umbria', lat: 43.3508, lng: 12.5772, sizeRaw: 'N.D.', employees: null, turnoverEurMillions: null },
-  { id: 'l-16', stage: 'Landfill Operator', questionRef: '6.6', name: 'COSTRUZIONI ISONZO S.R.L. - CO.IS', pvcType: 'Both', city: "San Pier d'Isonzo (GO)", regionOrProvince: 'Friuli-Venezia Giulia', lat: 45.8539, lng: 13.4628, sizeRaw: '10 empl - 2,46M€', employees: 10, turnoverEurMillions: 2.46 },
-  { id: 'l-17', stage: 'Landfill Operator', questionRef: '6.6', name: 'ECO.PA. S.R.L.', pvcType: 'Both', city: 'Bedizzole (BS)', regionOrProvince: 'Lombardia', lat: 45.5117, lng: 10.4139, sizeRaw: '12 empl - 0,853M€', employees: 12, turnoverEurMillions: 0.853 },
-  { id: 'l-18', stage: 'Landfill Operator', questionRef: '6.6', name: 'ECOADDA SRL', pvcType: 'Both', city: "Cavenago d'Adda (LO)", regionOrProvince: 'Lombardia', lat: 45.2847, lng: 9.6011, sizeRaw: 'N.D.', employees: null, turnoverEurMillions: null },
-  { id: 'l-19', stage: 'Landfill Operator', questionRef: '6.6', name: 'EXE S.P.A.', pvcType: 'Both', city: 'Trivignano Udinese (UD)', regionOrProvince: 'Friuli-Venezia Giulia', lat: 45.9467, lng: 13.3400, sizeRaw: 'N.D.', employees: null, turnoverEurMillions: null },
-  { id: 'l-20', stage: 'Landfill Operator', questionRef: '6.6', name: 'GAETANO BELLABARBA & C. SRL', pvcType: 'Both', city: 'Livorno (LI)', regionOrProvince: 'Toscana', lat: 43.5485, lng: 10.3106, sizeRaw: 'N.D.', employees: null, turnoverEurMillions: null },
-  { id: 'l-21', stage: 'Landfill Operator', questionRef: '6.6', name: 'GESTECO S.P.A. (Cividale)', pvcType: 'Both', city: 'Cividale del Friuli (UD)', regionOrProvince: 'Friuli-Venezia Giulia', lat: 46.0933, lng: 13.4319, sizeRaw: '130 empl - 22,69M€', employees: 130, turnoverEurMillions: 22.69 },
-  { id: 'l-22', stage: 'Landfill Operator', questionRef: '6.6', name: 'GESTECO S.P.A. (Remanzacco)', pvcType: 'Both', city: 'Remanzacco (UD)', regionOrProvince: 'Friuli-Venezia Giulia', lat: 46.0800, lng: 13.3100, sizeRaw: 'N.D.', employees: null, turnoverEurMillions: null },
-  { id: 'l-23', stage: 'Landfill Operator', questionRef: '6.6', name: 'GUIDO RUGGIU S.R.L.', pvcType: 'Both', city: 'Zerfaliu (OR)', regionOrProvince: 'Sardegna', lat: 39.9600, lng: 8.7100, sizeRaw: '15 empl - 2,716M€', employees: 15, turnoverEurMillions: 2.716 },
-  { id: 'l-24', stage: 'Landfill Operator', questionRef: '6.6', name: 'HERAMBIENTE S.P.A.', pvcType: 'Both', city: 'Cordenons (PN)', regionOrProvince: 'Friuli-Venezia Giulia', lat: 45.9839, lng: 12.7056, sizeRaw: '722 empl - 535,9M€', employees: 722, turnoverEurMillions: 535.90 },
-  { id: 'l-25', stage: 'Landfill Operator', questionRef: '6.6', name: 'IMPRESA CERRUTI S.P.A.', pvcType: 'Both', city: 'Imperia (IM)', regionOrProvince: 'Liguria', lat: 43.8897, lng: 8.0394, sizeRaw: 'N.D.', employees: null, turnoverEurMillions: null },
-  { id: 'l-26', stage: 'Landfill Operator', questionRef: '6.6', name: 'IRWEG S.R.L.', pvcType: 'Both', city: 'Molino dei Torti (AL)', regionOrProvince: 'Piemonte', lat: 45.0253, lng: 8.8947, sizeRaw: 'N.D.', employees: null, turnoverEurMillions: null },
-  { id: 'l-27', stage: 'Landfill Operator', questionRef: '6.6', name: 'LA TORRAZZA SRL', pvcType: 'Both', city: 'Torrazza Piemonte (TO)', regionOrProvince: 'Piemonte', lat: 45.2167, lng: 7.9833, sizeRaw: '4 empl - 0,872M€', employees: 4, turnoverEurMillions: 0.872 },
-  { id: 'l-28', stage: 'Landfill Operator', questionRef: '6.6', name: 'LIGURIA CAVE DI RIVARA ENRICO', pvcType: 'Both', city: 'Taggia (IM)', regionOrProvince: 'Liguria', lat: 43.8617, lng: 7.8506, sizeRaw: '5 empl - N.D.', employees: 5, turnoverEurMillions: null },
-  { id: 'l-29', stage: 'Landfill Operator', questionRef: '6.6', name: 'PROGRAMMA AMBIENTE APUANE S.P.A.', pvcType: 'Both', city: 'Montignoso (MS)', regionOrProvince: 'Toscana', lat: 44.0167, lng: 10.1667, sizeRaw: '4 empl - 0,599M€', employees: 4, turnoverEurMillions: 0.599 },
-  { id: 'l-30', stage: 'Landfill Operator', questionRef: '6.6', name: 'QUEIROLO CLAUDIO', pvcType: 'Both', city: 'Levanto (SP)', regionOrProvince: 'Liguria', lat: 44.1708, lng: 9.6122, sizeRaw: '13 empl - 2,03M€', employees: 13, turnoverEurMillions: 2.03 },
-  { id: 'l-31', stage: 'Landfill Operator', questionRef: '6.6', name: 'REI - RICUPERI ECOLOGICI INDUSTRIALI SRL', pvcType: 'Both', city: 'Collegno (TO)', regionOrProvince: 'Piemonte', lat: 45.0775, lng: 7.5722, sizeRaw: '21 empl - 11,02M€', employees: 21, turnoverEurMillions: 11.02 },
-  { id: 'l-32', stage: 'Landfill Operator', questionRef: '6.6', name: 'S.A.I. AMBIENTE SRL', pvcType: 'Both', city: 'Cormons (GO)', regionOrProvince: 'Friuli-Venezia Giulia', lat: 45.9600, lng: 13.4700, sizeRaw: '2 empl - 0,183M€', employees: 2, turnoverEurMillions: 0.183 },
-  { id: 'l-33', stage: 'Landfill Operator', questionRef: '6.6', name: 'S.A.L.I.T. S.R.L.', pvcType: 'Both', city: 'Medea (GO)', regionOrProvince: 'Friuli-Venezia Giulia', lat: 45.9167, lng: 13.4167, sizeRaw: '13 empl - 2,71M€', employees: 13, turnoverEurMillions: 2.71 },
-  { id: 'l-34', stage: 'Landfill Operator', questionRef: '6.6', name: 'S.R.T. SPA (Tortona)', pvcType: 'Both', city: 'Tortona (AL)', regionOrProvince: 'Piemonte', lat: 44.8972, lng: 8.8656, sizeRaw: '141 empl - 31,95M€', employees: 141, turnoverEurMillions: 31.95 },
-  { id: 'l-35', stage: 'Landfill Operator', questionRef: '6.6', name: 'S.R.T. SPA (Novi Ligure)', pvcType: 'Both', city: 'Novi Ligure (AL)', regionOrProvince: 'Piemonte', lat: 44.7619, lng: 8.7869, sizeRaw: '41 empl - 3,07M€', employees: 41, turnoverEurMillions: 3.07 },
-  { id: 'l-36', stage: 'Landfill Operator', questionRef: '6.6', name: 'SIA SRL', pvcType: 'Both', city: 'Grosso (TO)', regionOrProvince: 'Piemonte', lat: 45.2572, lng: 7.5581, sizeRaw: '199 empl - 30,59M€', employees: 199, turnoverEurMillions: 30.59 },
-  { id: 'l-37', stage: 'Landfill Operator', questionRef: '6.6', name: 'SMC SMALTIMENTI CONTROLLATI SPA', pvcType: 'Both', city: 'Chivasso (TO)', regionOrProvince: 'Piemonte', lat: 45.1897, lng: 7.8872, sizeRaw: '375 empl - 155,88M€', employees: 375, turnoverEurMillions: 155.88 },
-  { id: 'l-38', stage: 'Landfill Operator', questionRef: '6.6', name: 'TRANS GHIAIA S.R.L.', pvcType: 'Both', city: 'Arzene (PN)', regionOrProvince: 'Friuli-Venezia Giulia', lat: 46.0017, lng: 12.8489, sizeRaw: '81 empl - 14,38M€', employees: 81, turnoverEurMillions: 14.38 }
+  { id: 'l-1', stage: 'Landfill Operator', questionRef: '6.6', name: 'ALTOPIANO SMALTIMENTO DEMO SRL', pvcType: 'Both', city: 'Cavaglià (BI)', regionOrProvince: 'Piemonte', lat: 45.4, lng: 8.0, sizeRaw: '1450 empl - ~817M€ (demo)', employees: 1450, turnoverEurMillions: 817 },
+  { id: 'l-2', stage: 'Landfill Operator', questionRef: '6.6', name: 'BASSA VALLE DISCARICA S.P.A.', pvcType: 'Both', city: 'Orvieto (TR)', regionOrProvince: 'Umbria', lat: 42.7, lng: 12.1, sizeRaw: '310 empl - ~114M€ (demo)', employees: 310, turnoverEurMillions: 114 },
+  { id: 'l-3', stage: 'Landfill Operator', questionRef: '6.6', name: 'COLLE VERDE SITE SPA', pvcType: 'Both', city: 'Mattie (TO)', regionOrProvince: 'Piemonte', lat: 45.1, lng: 7.1, sizeRaw: '100 empl - ~16.8M€ (demo)', employees: 100, turnoverEurMillions: 16.8 },
+  { id: 'l-4', stage: 'Landfill Operator', questionRef: '6.6', name: 'DOSSO NORD LANDFILL COOP DEMO', pvcType: 'Both', city: 'Bassignana (AL)', regionOrProvince: 'Piemonte', lat: 45.0, lng: 8.8, sizeRaw: '2 empl - ~0.9M€ (demo)', employees: 2, turnoverEurMillions: 0.9 },
+  { id: 'l-5', stage: 'Landfill Operator', questionRef: '6.6', name: 'EREMO DEMO SITE S.R.L.', pvcType: 'Both', city: 'Solero (AL)', regionOrProvince: 'Piemonte', lat: 44.9, lng: 8.5, sizeRaw: '35 empl - ~16.3M€ (demo)', employees: 35, turnoverEurMillions: 16.3 },
+  { id: 'l-6', stage: 'Landfill Operator', questionRef: '6.6', name: 'FIUME SECCO SITE SRL', pvcType: 'Both', city: 'Cavernago (BG)', regionOrProvince: 'Lombardia', lat: 45.7, lng: 9.8, sizeRaw: 'N.D. (demo)', employees: null, turnoverEurMillions: null },
+  { id: 'l-7', stage: 'Landfill Operator', questionRef: '6.6', name: 'GOLA EST SITE S.P.A.', pvcType: 'Both', city: 'Valvasone (PN)', regionOrProvince: 'Friuli-Venezia Giulia', lat: 46.0, lng: 12.8, sizeRaw: '40 empl - ~7.3M€ (demo)', employees: 40, turnoverEurMillions: 7.3 },
+  { id: 'l-8', stage: 'Landfill Operator', questionRef: '6.6', name: 'HILLTOP DEMO LANDFILL SPA', pvcType: 'Both', city: 'Travagliato (BS)', regionOrProvince: 'Lombardia', lat: 45.5, lng: 10.1, sizeRaw: '25 empl - ~11.7M€ (demo)', employees: 25, turnoverEurMillions: 11.7 },
+  { id: 'l-9', stage: 'Landfill Operator', questionRef: '6.6', name: 'ISOLA VERDE SITE COOP DEMO', pvcType: 'Both', city: 'Caravino (TO)', regionOrProvince: 'Piemonte', lat: 45.3, lng: 8.0, sizeRaw: 'N.D. (demo)', employees: null, turnoverEurMillions: null },
+  { id: 'l-10', stage: 'Landfill Operator', questionRef: '6.6', name: 'JOLLY SITE DEMO S.R.L.', pvcType: 'Both', city: 'Pianezza (TO)', regionOrProvince: 'Piemonte', lat: 45.0, lng: 7.6, sizeRaw: '20 empl - ~8.1M€ (demo)', employees: 20, turnoverEurMillions: 8.1 },
+  { id: 'l-11', stage: 'Landfill Operator', questionRef: '6.6', name: 'KASTEL SITE SRL', pvcType: 'Both', city: 'Ghedi (BS)', regionOrProvince: 'Lombardia', lat: 45.4, lng: 10.3, sizeRaw: 'N.D. (demo)', employees: null, turnoverEurMillions: null },
+  { id: 'l-12', stage: 'Landfill Operator', questionRef: '6.6', name: 'LUNA PARK SITE DEMO S.P.A.', pvcType: 'Both', city: 'Polcenigo (PN)', regionOrProvince: 'Friuli-Venezia Giulia', lat: 46.0, lng: 12.4, sizeRaw: '19 empl - ~5.4M€ (demo)', employees: 19, turnoverEurMillions: 5.4 },
+  { id: 'l-13', stage: 'Landfill Operator', questionRef: '6.6', name: 'MONTE BASSO SITE SPA', pvcType: 'Both', city: 'Camino (AL)', regionOrProvince: 'Piemonte', lat: 45.1, lng: 8.3, sizeRaw: 'N.D. (demo)', employees: null, turnoverEurMillions: null },
+  { id: 'l-14', stage: 'Landfill Operator', questionRef: '6.6', name: 'NOCE SITE DEMO COOP DEMO', pvcType: 'Both', city: 'Casale Monferrato (AL)', regionOrProvince: 'Piemonte', lat: 45.1, lng: 8.4, sizeRaw: 'N.D. (demo)', employees: null, turnoverEurMillions: null },
+  { id: 'l-15', stage: 'Landfill Operator', questionRef: '6.6', name: 'ORIZZONTE SITE S.R.L.', pvcType: 'Both', city: 'Gubbio (PG)', regionOrProvince: 'Umbria', lat: 43.3, lng: 12.6, sizeRaw: 'N.D. (demo)', employees: null, turnoverEurMillions: null },
+  { id: 'l-16', stage: 'Landfill Operator', questionRef: '6.6', name: 'NOCE SITE DEMO SRL', pvcType: 'Both', city: "San Pier d'Isonzo (GO)", regionOrProvince: 'Friuli-Venezia Giulia', lat: 45.9, lng: 13.5, sizeRaw: '10 empl - ~2.7M€ (demo)', employees: 10, turnoverEurMillions: 2.7 },
+  { id: 'l-17', stage: 'Landfill Operator', questionRef: '6.6', name: 'PIANO SITE DEMO SRL', pvcType: 'Both', city: 'Bedizzole (BS)', regionOrProvince: 'Lombardia', lat: 45.4, lng: 10.4, sizeRaw: '11 empl - ~0.9M€ (demo)', employees: 11, turnoverEurMillions: 0.9 },
+  { id: 'l-18', stage: 'Landfill Operator', questionRef: '6.6', name: 'ORIZZONTE SITE SPA', pvcType: 'Both', city: "Cavenago d'Adda (LO)", regionOrProvince: 'Lombardia', lat: 45.3, lng: 9.6, sizeRaw: 'N.D. (demo)', employees: null, turnoverEurMillions: null },
+  { id: 'l-19', stage: 'Landfill Operator', questionRef: '6.6', name: 'QUERCIA SITE S.P.A.', pvcType: 'Both', city: 'Trivignano Udinese (UD)', regionOrProvince: 'Friuli-Venezia Giulia', lat: 46.0, lng: 13.3, sizeRaw: 'N.D. (demo)', employees: null, turnoverEurMillions: null },
+  { id: 'l-20', stage: 'Landfill Operator', questionRef: '6.6', name: 'ROCCA SITE DEMO SPA', pvcType: 'Both', city: 'Livorno (LI)', regionOrProvince: 'Toscana', lat: 43.5, lng: 10.4, sizeRaw: 'N.D. (demo)', employees: null, turnoverEurMillions: null },
+  { id: 'l-21', stage: 'Landfill Operator', questionRef: '6.6', name: 'SELVA SITE COOP DEMO', pvcType: 'Both', city: 'Cividale del Friuli (UD)', regionOrProvince: 'Friuli-Venezia Giulia', lat: 46.1, lng: 13.4, sizeRaw: '130 empl - ~20.9M€ (demo)', employees: 130, turnoverEurMillions: 20.9 },
+  { id: 'l-22', stage: 'Landfill Operator', questionRef: '6.6', name: 'TORRE SITE DEMO S.R.L.', pvcType: 'Both', city: 'Remanzacco (UD)', regionOrProvince: 'Friuli-Venezia Giulia', lat: 46.0, lng: 13.3, sizeRaw: 'N.D. (demo)', employees: null, turnoverEurMillions: null },
+  { id: 'l-23', stage: 'Landfill Operator', questionRef: '6.6', name: 'UMBRIA SITE DEMO SRL', pvcType: 'Both', city: 'Zerfaliu (OR)', regionOrProvince: 'Sardegna', lat: 39.9, lng: 8.7, sizeRaw: '14 empl - ~3.2M€ (demo)', employees: 14, turnoverEurMillions: 3.2 },
+  { id: 'l-24', stage: 'Landfill Operator', questionRef: '6.6', name: 'VALLE SITE DEMO S.P.A.', pvcType: 'Both', city: 'Cordenons (PN)', regionOrProvince: 'Friuli-Venezia Giulia', lat: 46.0, lng: 12.8, sizeRaw: '850 empl - ~510M€ (demo)', employees: 850, turnoverEurMillions: 510 },
+  { id: 'l-25', stage: 'Landfill Operator', questionRef: '6.6', name: 'WEST RIDGE SITE SPA', pvcType: 'Both', city: 'Imperia (IM)', regionOrProvince: 'Liguria', lat: 43.9, lng: 8.0, sizeRaw: 'N.D. (demo)', employees: null, turnoverEurMillions: null },
+  { id: 'l-26', stage: 'Landfill Operator', questionRef: '6.6', name: 'XENIA SITE DEMO COOP DEMO', pvcType: 'Both', city: 'Molino dei Torti (AL)', regionOrProvince: 'Piemonte', lat: 44.9, lng: 8.9, sizeRaw: 'N.D. (demo)', employees: null, turnoverEurMillions: null },
+  { id: 'l-27', stage: 'Landfill Operator', questionRef: '6.6', name: 'YARROW SITE S.R.L.', pvcType: 'Both', city: 'Torrazza Piemonte (TO)', regionOrProvince: 'Piemonte', lat: 45.1, lng: 8.0, sizeRaw: '4 empl - ~0.9M€ (demo)', employees: 4, turnoverEurMillions: 0.9 },
+  { id: 'l-28', stage: 'Landfill Operator', questionRef: '6.6', name: 'ZEFIRO SITE DEMO SRL', pvcType: 'Both', city: 'Taggia (IM)', regionOrProvince: 'Liguria', lat: 43.9, lng: 7.8, sizeRaw: '5 empl - N.D. (demo)', employees: 5, turnoverEurMillions: null },
+  { id: 'l-29', stage: 'Landfill Operator', questionRef: '6.6', name: 'ALBA SITE DEMO S.P.A.', pvcType: 'Both', city: 'Montignoso (MS)', regionOrProvince: 'Toscana', lat: 44.0, lng: 10.1, sizeRaw: '4 empl - ~0.6M€ (demo)', employees: 4, turnoverEurMillions: 0.6 },
+  { id: 'l-30', stage: 'Landfill Operator', questionRef: '6.6', name: 'BOSCO SITE SPA', pvcType: 'Both', city: 'Levanto (SP)', regionOrProvince: 'Liguria', lat: 44.1, lng: 9.5, sizeRaw: '11 empl - ~1.7M€ (demo)', employees: 11, turnoverEurMillions: 1.7 },
+  { id: 'l-31', stage: 'Landfill Operator', questionRef: '6.6', name: 'CAMPO SITE DEMO COOP DEMO', pvcType: 'Both', city: 'Collegno (TO)', regionOrProvince: 'Piemonte', lat: 45.0, lng: 7.5, sizeRaw: '18 empl - ~11.7M€ (demo)', employees: 18, turnoverEurMillions: 11.7 },
+  { id: 'l-32', stage: 'Landfill Operator', questionRef: '6.6', name: 'DUNA SITE S.R.L.', pvcType: 'Both', city: 'Cormons (GO)', regionOrProvince: 'Friuli-Venezia Giulia', lat: 45.9, lng: 13.4, sizeRaw: '2 empl - ~0.2M€ (demo)', employees: 2, turnoverEurMillions: 0.2 },
+  { id: 'l-33', stage: 'Landfill Operator', questionRef: '6.6', name: 'ERBA SITE DEMO SRL', pvcType: 'Both', city: 'Medea (GO)', regionOrProvince: 'Friuli-Venezia Giulia', lat: 45.9, lng: 13.5, sizeRaw: '15 empl - ~3M€ (demo)', employees: 15, turnoverEurMillions: 3 },
+  { id: 'l-34', stage: 'Landfill Operator', questionRef: '6.6', name: 'FALCO SITE S.P.A.', pvcType: 'Both', city: 'Tortona (AL)', regionOrProvince: 'Piemonte', lat: 44.9, lng: 8.8, sizeRaw: '130 empl - ~31M€ (demo)', employees: 130, turnoverEurMillions: 31 },
+  { id: 'l-35', stage: 'Landfill Operator', questionRef: '6.6', name: 'GIGLIO SITE DEMO SPA', pvcType: 'Both', city: 'Novi Ligure (AL)', regionOrProvince: 'Piemonte', lat: 44.7, lng: 8.8, sizeRaw: '40 empl - ~3.1M€ (demo)', employees: 40, turnoverEurMillions: 3.1 },
+  { id: 'l-36', stage: 'Landfill Operator', questionRef: '6.6', name: 'HORIZON SITE COOP DEMO', pvcType: 'Both', city: 'Grosso (TO)', regionOrProvince: 'Piemonte', lat: 45.2, lng: 7.6, sizeRaw: '180 empl - ~27.9M€ (demo)', employees: 180, turnoverEurMillions: 27.9 },
+  { id: 'l-37', stage: 'Landfill Operator', questionRef: '6.6', name: 'IRIS SITE DEMO S.R.L.', pvcType: 'Both', city: 'Chivasso (TO)', regionOrProvince: 'Piemonte', lat: 45.2, lng: 7.9, sizeRaw: '410 empl - ~183M€ (demo)', employees: 410, turnoverEurMillions: 183 },
+  { id: 'l-38', stage: 'Landfill Operator', questionRef: '6.6', name: 'JUNO SITE SRL', pvcType: 'Both', city: 'Arzene (PN)', regionOrProvince: 'Friuli-Venezia Giulia', lat: 46.0, lng: 12.8, sizeRaw: '90 empl - ~14M€ (demo)', employees: 90, turnoverEurMillions: 14 }
 ];
 
 export const ITALY_2025_DATASET: CountryPCWIDataset = {
@@ -280,13 +280,13 @@ export const ITALY_2025_DATASET: CountryPCWIDataset = {
     ytdRecyclingPostConsumerTonnes: 1204,
     ytdConvertingTotalTonnes: 407,
     ytdConvertingForecastTonnes: 59823,
-    ytdExplanation: 'YTD figures appear low due to the semester data-entry rule. Recovinyl does not push companies prior to the June close; volumes increase sharply at the end of June when semester reporting is requested (95% of target reached last year).',
+    ytdExplanation: 'Demo note: year-to-date volumes in this synthetic dataset are illustrative only. In a live reporting cycle, mid-year entries often lag until semester close; figures here are scrambled for public demo use and do not reflect real network performance.',
     sectorOutlooks: [
-      { sector: 'Profiles', outlook: '10% higher than previous year — positive signal, though early to project through year-end.' },
-      { sector: 'Flooring', outlook: 'No flooring recycling currently active in Italy.' },
-      { sector: 'Cables', outlook: 'Pre-consumer is 5% lower and Post-consumer is 10% higher compared to 2024; lead/legacy restriction impacts closely watched.' },
-      { sector: 'Pipes', outlook: 'Potential significant volume jump if a major new recycler joins the Recovinyl network.' },
-      { sector: 'Other Flexibles & Rigid Film', outlook: 'Small, stable stream; rigid film stable since 2018.' }
+      { sector: 'Profiles', outlook: 'Demo outlook: moderate year-on-year movement — illustrative only.' },
+      { sector: 'Flooring', outlook: 'Demo outlook: limited dedicated flooring recycling shown in this sample dataset.' },
+      { sector: 'Cables', outlook: 'Demo outlook: mix of pre- and post-consumer cable streams; values are synthetic.' },
+      { sector: 'Pipes', outlook: 'Demo outlook: pipe recycling capacity varies by region in this illustrative model.' },
+      { sector: 'Other Flexibles & Rigid Film', outlook: 'Demo outlook: smaller stable streams used for UI completeness.' }
     ]
   },
   card1: {
@@ -390,19 +390,19 @@ export const ITALY_2025_DATASET: CountryPCWIDataset = {
       {
         id: 'stk-2-1',
         questionRef: '2.7',
-        name: 'WREP – Waste Recycling Project',
-        affiliation: 'PVC FORUM ITALIA - DAE - VERITAS - ETRA',
-        website: 'https://www.pvcforum.it',
-        city: 'Verona - Venezia - Vicenza',
-        contact: 'info@vinylplusitalia.it'
+        name: 'Demo Municipal Collection Network',
+        affiliation: 'Demo National PVC Network — Italy',
+        website: 'https://example.org/pcwi-demo',
+        city: 'Demo City Cluster',
+        contact: 'rrr.it@pcwi-demo.example'
       }
     ],
     q2_8_costs: [
-      { id: 'cost-2-1', stage: 'Collection', questionRef: '2.8', costType: 'TRANSPORT', pvcType: 'Both', costDisplay: '15 €/ton', minEurPerTon: 15, maxEurPerTon: 15, remarks: '= 67 € fixed + 1.4 €/ton on average distance 150 km' },
-      { id: 'cost-2-2', stage: 'Collection', questionRef: '2.8', costType: 'PRESS / VOLUME REDUCTION', pvcType: 'Rigid PVC', costDisplay: '39 €/ton', minEurPerTon: 39, maxEurPerTon: 39, remarks: 'Compaction prior to transport' },
-      { id: 'cost-2-3', stage: 'Collection', questionRef: '2.8', costType: 'MANUAL SORTING', pvcType: 'Rigid PVC', costDisplay: '20 – 30 €/ton', minEurPerTon: 20, maxEurPerTon: 30, remarks: 'Varies North to South Italy' },
-      { id: 'cost-2-4', stage: 'Collection', questionRef: '2.8', costType: 'SHRED (5 to 20 cm)', pvcType: 'Rigid PVC', costDisplay: '75 €/ton', minEurPerTon: 75, maxEurPerTon: 75, remarks: 'Coarse shredding for rigid PVC only' },
-      { id: 'cost-2-5', stage: 'Collection', questionRef: '2.8', costType: 'SHRED (1 cm)', pvcType: 'Flexible PVC', costDisplay: '150 €/ton', minEurPerTon: 150, maxEurPerTon: 150, remarks: 'Fine granulation for cables only' }
+      { id: 'cost-2-1', stage: 'Collection', questionRef: '2.8', costType: 'TRANSPORT', pvcType: 'Both', costDisplay: '14 – 17 €/ton', minEurPerTon: 14, maxEurPerTon: 17, remarks: '= 61 € fixed + 2 €/ton on average distance 150 km' },
+      { id: 'cost-2-2', stage: 'Collection', questionRef: '2.8', costType: 'PRESS / VOLUME REDUCTION', pvcType: 'Rigid PVC', costDisplay: '37 – 41 €/ton', minEurPerTon: 37, maxEurPerTon: 41, remarks: 'Compaction prior to transport' },
+      { id: 'cost-2-3', stage: 'Collection', questionRef: '2.8', costType: 'MANUAL SORTING', pvcType: 'Rigid PVC', costDisplay: '19 – 34 €/ton', minEurPerTon: 19, maxEurPerTon: 34, remarks: 'Varies North to South Italy' },
+      { id: 'cost-2-4', stage: 'Collection', questionRef: '2.8', costType: 'SHRED (5 to 20 cm)', pvcType: 'Rigid PVC', costDisplay: '62 – 79 €/ton', minEurPerTon: 62, maxEurPerTon: 79, remarks: 'Coarse shredding for rigid PVC only' },
+      { id: 'cost-2-5', stage: 'Collection', questionRef: '2.8', costType: 'SHRED (1 cm)', pvcType: 'Flexible PVC', costDisplay: '137 – 173 €/ton', minEurPerTon: 137, maxEurPerTon: 173, remarks: 'Fine granulation for cables only' }
     ]
   },
   card3: {
@@ -428,7 +428,7 @@ export const ITALY_2025_DATASET: CountryPCWIDataset = {
         outputForm: 'Sorted bulky fraction',
         typicalQuality: '0–10% impurity',
         mainImpurities: 'Other plastics',
-        priceEurPerTon: '10 – 80 €/ton'
+        priceEurPerTon: '11 – 93 €/ton'
       },
       {
         id: 'tech-3-2',
@@ -443,7 +443,7 @@ export const ITALY_2025_DATASET: CountryPCWIDataset = {
         outputForm: 'Separated cable jacket granules',
         typicalQuality: '3% impurity',
         mainImpurities: 'Copper',
-        priceEurPerTon: '0 – 20 €/ton'
+        priceEurPerTon: '0 – 17 €/ton'
       },
       {
         id: 'tech-3-3',
@@ -473,7 +473,7 @@ export const ITALY_2025_DATASET: CountryPCWIDataset = {
         outputForm: 'Optical-sorted rigid flakes',
         typicalQuality: '1% impurity',
         mainImpurities: 'Other plastics / rubber',
-        priceEurPerTon: '50 €/ton'
+        priceEurPerTon: '52 €/ton'
       }
     ],
     q3_10_massBalance: [
@@ -536,10 +536,10 @@ export const ITALY_2025_DATASET: CountryPCWIDataset = {
     totalSortedProcessed: 46440,
     q3_11_stakeholders: 'No dedicated sorting-only stakeholder associations reported.',
     q3_12_costs: [
-      { id: 'cost-3-1', stage: 'Sorting & Pretreatment', questionRef: '3.12', costType: 'MANUAL SORTING', pvcType: 'Rigid PVC', costDisplay: '25 €/ton', minEurPerTon: 25, maxEurPerTon: 25, remarks: 'Primarily performed by waste collectors' },
-      { id: 'cost-3-2', stage: 'Sorting & Pretreatment', questionRef: '3.12', costType: 'NIR (Optical Sorting)', pvcType: 'Rigid PVC', costDisplay: '90 €/ton', minEurPerTon: 90, maxEurPerTon: 90, remarks: 'Only one company uses it in Italy due to high CAPEX/OPEX' },
-      { id: 'cost-3-3', stage: 'Sorting & Pretreatment', questionRef: '3.12', costType: 'FLOATATION', pvcType: 'Flexible PVC', costDisplay: '50 €/ton', minEurPerTon: 50, maxEurPerTon: 50, remarks: 'Density separation in water/medium' },
-      { id: 'cost-3-4', stage: 'Sorting & Pretreatment', questionRef: '3.12', costType: 'COPPER SORTERS / ELECTROSTATIC', pvcType: 'Flexible PVC', costDisplay: '70 €/ton', minEurPerTon: 70, maxEurPerTon: 70, remarks: 'Hamos electrostatic separation of copper/rubber/PVC' }
+      { id: 'cost-3-1', stage: 'Sorting & Pretreatment', questionRef: '3.12', costType: 'MANUAL SORTING', pvcType: 'Rigid PVC', costDisplay: '27 – 29 €/ton', minEurPerTon: 27, maxEurPerTon: 29, remarks: 'Primarily performed by waste collectors' },
+      { id: 'cost-3-2', stage: 'Sorting & Pretreatment', questionRef: '3.12', costType: 'NIR (Optical Sorting)', pvcType: 'Rigid PVC', costDisplay: '97 – 104 €/ton', minEurPerTon: 97, maxEurPerTon: 104, remarks: 'Only one company uses it in Italy due to high CAPEX/OPEX' },
+      { id: 'cost-3-3', stage: 'Sorting & Pretreatment', questionRef: '3.12', costType: 'FLOATATION', pvcType: 'Flexible PVC', costDisplay: '48 – 55 €/ton', minEurPerTon: 48, maxEurPerTon: 55, remarks: 'Density separation in water/medium' },
+      { id: 'cost-3-4', stage: 'Sorting & Pretreatment', questionRef: '3.12', costType: 'COPPER SORTERS / ELECTROSTATIC', pvcType: 'Flexible PVC', costDisplay: '65 – 69 €/ton', minEurPerTon: 65, maxEurPerTon: 69, remarks: 'Hamos electrostatic separation of copper/rubber/PVC' }
     ]
   },
   card4: {
@@ -559,9 +559,9 @@ export const ITALY_2025_DATASET: CountryPCWIDataset = {
       { name: '5) NIR', description: 'optical readers read the polymer light reflection to identity PVC ad sort from other materials' }
     ],
     q4_5_qualityAndPricingByStream: [
-      { stream: 'CABLES', pvcType: 'Flexible PVC', impurityRule: 'impurities < 3% (mainly copper) 0 to - 20 €/ton; impurities >3% but <5% are not accepted (no recycleble with available technonligies); impurities >5% price is related to copper estimations', priceRange: '0 to -20 €/ton' },
-      { stream: 'RIGID PVC from B&C', pvcType: 'Rigid PVC', impurityRule: 'impurities <1% price is quite variable 50€/ton to 200€/ton depending on many factors (dirty, sun exposure, percentage of rubber which is difficult to sort); impurities >1% price drop to 0 €/ton to 50 €/ton', priceRange: '50 – 200 €/ton (<1%) | 0 – 50 €/ton (>1%)' },
-      { stream: 'OTHER RIGID', pvcType: 'Rigid PVC', impurityRule: 'impurities <3% price 50-70 €/ton; impurities >3% the price of sorting is higher than the value itself (recycling is anti-economic)', priceRange: '50 – 70 €/ton' },
+      { stream: 'CABLES', pvcType: 'Flexible PVC', impurityRule: 'impurities < 3% (mainly copper) 0 to - 16 €/ton; impurities >3% but <5% are not accepted (no recycleble with available technonligies); impurities >5% price is related to copper estimations', priceRange: '-21 – 0 €/ton' },
+      { stream: 'RIGID PVC from B&C', pvcType: 'Rigid PVC', impurityRule: 'impurities <1% price is quite variable 51 – 228 €/ton depending on many factors (dirty, sun exposure, percentage of rubber which is difficult to sort); impurities >1% price drop to 0 – 45 €/ton', priceRange: '54 – 167 €/ton (<1%) | 0 – 53 €/ton (>1%)' },
+      { stream: 'OTHER RIGID', pvcType: 'Rigid PVC', impurityRule: 'impurities <3% price 53 – 62 €/ton; impurities >3% the price of sorting is higher than the value itself (recycling is anti-economic)', priceRange: '55 – 65 €/ton' },
       { stream: 'AGRICULTURE FILM', pvcType: 'Flexible PVC', impurityRule: 'no impurities accepted except mud, 0 €/ton', priceRange: '0 €/ton' },
       { stream: 'FLEXIBLE from textile/packaging/RSU', pvcType: 'Flexible PVC', impurityRule: 'no impurities accepted, 0 €/ton', priceRange: '0 €/ton' },
       { stream: 'COATED FABRIC from ADVERTISING', pvcType: 'Flexible PVC', impurityRule: 'no impurities accepted, 0 €/ton', priceRange: '0 €/ton' }
@@ -649,8 +649,8 @@ export const ITALY_2025_DATASET: CountryPCWIDataset = {
     totalRecycledOutput: 20641,
     q4_9_exportStatus: 'Uptake/Conversion in the country (Further converting of PVC recyclate takes place in the country)',
     q4_10_exportNotes: [
-      'NOTHING IS EXPORTED AS A WASTE',
-      'NO RECYCLERS WANNA SHARE DEEP INFORMATION ABOUT THEIR CLIETNS'
+      'Demo note: most recyclate uptake is modelled as domestic conversion in this sample.',
+      'Demo note: detailed downstream customer lists are not included in the public demo dataset.'
     ],
     q4_11_uptake: [
       {
@@ -705,11 +705,11 @@ export const ITALY_2025_DATASET: CountryPCWIDataset = {
     totalUptakeTonnes: 29714,
     q4_12_stakeholders: 'No stakeholders involved',
     q4_13_costs: [
-      { id: 'cost-4-1', stage: 'Recycling', questionRef: '4.13', costType: 'EXTRUSION / MOLDING', pvcType: 'Both', costDisplay: '250/350 €/ton', minEurPerTon: 250, maxEurPerTon: 350, remarks: 'this process is often the end step of other recycling process and should be added to their costs' },
-      { id: 'cost-4-2', stage: 'Recycling', questionRef: '4.13', costType: 'MICRONIZATION', pvcType: 'Flexible PVC', costDisplay: '150 €/ton', minEurPerTon: 150, maxEurPerTon: 150, remarks: '' },
-      { id: 'cost-4-3', stage: 'Recycling', questionRef: '4.13', costType: 'MINERY TECH / FLOATATION', pvcType: 'Flexible PVC', costDisplay: '50 €/ton', minEurPerTon: 50, maxEurPerTon: 50, remarks: '' },
-      { id: 'cost-4-4', stage: 'Recycling', questionRef: '4.13', costType: 'ELECTROSTATIC', pvcType: 'Both', costDisplay: '70 €/ton', minEurPerTon: 70, maxEurPerTon: 70, remarks: '' },
-      { id: 'cost-4-5', stage: 'Recycling', questionRef: '4.13', costType: 'NIR', pvcType: 'Rigid PVC', costDisplay: '90 €/ton', minEurPerTon: 90, maxEurPerTon: 90, remarks: '' }
+      { id: 'cost-4-1', stage: 'Recycling', questionRef: '4.13', costType: 'EXTRUSION / MOLDING', pvcType: 'Both', costDisplay: '294 – 387 €/ton', minEurPerTon: 294, maxEurPerTon: 387, remarks: 'this process is often the end step of other recycling process and should be added to their costs' },
+      { id: 'cost-4-2', stage: 'Recycling', questionRef: '4.13', costType: 'MICRONIZATION', pvcType: 'Flexible PVC', costDisplay: '164 – 167 €/ton', minEurPerTon: 164, maxEurPerTon: 167, remarks: '' },
+      { id: 'cost-4-3', stage: 'Recycling', questionRef: '4.13', costType: 'MINERY TECH / FLOATATION', pvcType: 'Flexible PVC', costDisplay: '41 – 46 €/ton', minEurPerTon: 41, maxEurPerTon: 46, remarks: '' },
+      { id: 'cost-4-4', stage: 'Recycling', questionRef: '4.13', costType: 'ELECTROSTATIC', pvcType: 'Both', costDisplay: '59 – 82 €/ton', minEurPerTon: 59, maxEurPerTon: 82, remarks: '' },
+      { id: 'cost-4-5', stage: 'Recycling', questionRef: '4.13', costType: 'NIR', pvcType: 'Rigid PVC', costDisplay: '74 – 106 €/ton', minEurPerTon: 74, maxEurPerTon: 106, remarks: '' }
     ]
   },
   card5: {
@@ -784,10 +784,10 @@ export const ITALY_2025_DATASET: CountryPCWIDataset = {
     ],
     q6_7_stakeholdersNote: 'No stakeholders specifically advocating or managing PVC landfilling.',
     q6_8_costs: [
-      { id: 'cost-6-1', stage: 'Landfilling', questionRef: '6.8', costType: 'TRANSPORT', pvcType: 'Both', costDisplay: '20 €/ton', minEurPerTon: 20, maxEurPerTon: 20, remarks: 'Transport from sorting/transfer site to landfill (distance-dependent)' },
-      { id: 'cost-6-2', stage: 'Landfilling', questionRef: '6.8', costType: 'PRE-TREATMENT', pvcType: 'Both', costDisplay: '40 – 100 €/ton', minEurPerTon: 40, maxEurPerTon: 100, remarks: 'Cost of mandatory mechanical sorting, shredding, and stabilization before landfilling' },
-      { id: 'cost-6-3', stage: 'Landfilling', questionRef: '6.8', costType: 'GATE FEE', pvcType: 'Both', costDisplay: '120 – 140 €/ton', minEurPerTon: 120, maxEurPerTon: 140, remarks: 'Base fee charged by the landfill operator for accepting waste' },
-      { id: 'cost-6-4', stage: 'Landfilling', questionRef: '6.8', costType: 'REGIONAL TAX (Ecotassa)', pvcType: 'Both', costDisplay: '25 – 50 €/ton', minEurPerTon: 25, maxEurPerTon: 50, remarks: 'Regional tax applied to discourage landfill use (varies by region)' }
+      { id: 'cost-6-1', stage: 'Landfilling', questionRef: '6.8', costType: 'TRANSPORT', pvcType: 'Both', costDisplay: '18 – 23 €/ton', minEurPerTon: 18, maxEurPerTon: 23, remarks: 'Transport from sorting/transfer site to landfill (distance-dependent)' },
+      { id: 'cost-6-2', stage: 'Landfilling', questionRef: '6.8', costType: 'PRE-TREATMENT', pvcType: 'Both', costDisplay: '38 – 87 €/ton', minEurPerTon: 38, maxEurPerTon: 87, remarks: 'Cost of mandatory mechanical sorting, shredding, and stabilization before landfilling' },
+      { id: 'cost-6-3', stage: 'Landfilling', questionRef: '6.8', costType: 'GATE FEE', pvcType: 'Both', costDisplay: '136 – 155 €/ton', minEurPerTon: 136, maxEurPerTon: 155, remarks: 'Base fee charged by the landfill operator for accepting waste' },
+      { id: 'cost-6-4', stage: 'Landfilling', questionRef: '6.8', costType: 'REGIONAL TAX (Ecotassa)', pvcType: 'Both', costDisplay: '27 – 44 €/ton', minEurPerTon: 27, maxEurPerTon: 44, remarks: 'Regional tax applied to discourage landfill use (varies by region)' }
     ],
     q6_9_publicConcerns: 'No media controversy targeting PVC landfilling specifically; PVC has been affected alongside all other plastics by general anti-plastic public and private campaigns.'
   },
@@ -843,10 +843,10 @@ export const ITALY_2025_DATASET: CountryPCWIDataset = {
         mitigation: 'Stimulate a pan-European secondary raw materials marketplace (e.g., digital B2B waste/recyclate trading platforms like WasteTrade).'
       }
     ],
-    q7_4_voluntaryInitiatives: 'No standalone voluntary initiatives outside WREP (Waste Recycling Project by PVC Forum Italia / VinylPlus Italia with Veritas & Etra). Recovinyl and VinylPlus can expand regional municipal utility partnerships modeled on WREP.',
-    q7_5_generalImprovements: 'Creating a unified EU market for sorted PVC waste and recyclate to stimulate new collection streams, combined with hands-on training for municipal collection & sorting plants to recognize the economic value of separating PVC rather than landfilling it (which costs 205–310 €/ton).',
-    q7_6_keySourcesContacts: 'Municipal and multi-utility urban waste collectors listed in Question Card 2 (33 entities) and Card 3 (19 multi-utilities), coordinated via WREP / PVC Forum Italia (info@vinylplusitalia.it).',
-    q7_7_outlook2030: 'Before 2030, mandatory Extended Producer Responsibility (EPR) for Building & Construction will be introduced in Italy. Collected PVC quantities are expected to DOUBLE compared to current levels, though sorting quality challenges will intensify. Simultaneously, Italy’s PNRR (National Recovery & Resilience Plan) and green building transition are accelerating replacement of obsolete wood windows with PVC profiles, expanding future circularity feedstock.'
+    q7_4_voluntaryInitiatives: 'Demo note: voluntary municipal partnership programmes are represented generically in this sample. Expand regional utility partnerships as a UI illustration only.',
+    q7_5_generalImprovements: 'Demo suggestion: strengthen EU secondary markets for sorted PVC and recyclate, and train collection/sorting staff on the value of separating PVC versus landfilling (illustrative landfill burden in this dataset: 200 – 390 €/ton).',
+    q7_6_keySourcesContacts: 'Demo sources: fictional municipal and multi-utility collectors listed in Question Cards 2–3, coordinated via the Demo National PVC Network — Italy (rrr.it@pcwi-demo.example).',
+    q7_7_outlook2030: 'Demo outlook to 2030: construction EPR schemes and renovation activity may increase collected PVC volumes in this illustrative scenario; sorting quality remains a key challenge. Figures and timelines are synthetic for public demo use.'
   },
   facilities: ITALY_FACILITIES,
   discrepancies: [

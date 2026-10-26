@@ -3901,22 +3901,12 @@ export const QuestionCardsPortal: React.FC<Props> = ({
                 }
                 items={getRegistryItems(
                   'q4_5',
-                  [
-                    'CABLES: impurities < 3% (mainly copper) 0 to - 20 €/ton; impurities >3% but <5% are not accepted (no recycleble with available technonligies); impurities >5% price is related to copper estimations',
-                    'RIGID PVC from B&C: impurities <1% price is quite variable 50€/ton to 200€/ton depending on many factors (dirty, sun exposure, percentage of rubber which is difficult to sort); impurities >1% price drop to 0 €/ton to 50 €/ton',
-                    'OTHER RIGID: impurities <3% price %0-70 €/ton; impurities >3% the price of sorting is higher than the value itself (recycling is anti-economic)',
-                    'AGRICULTURE FILM: no impurities accepted except mud, 0 €/ton',
-                    'FLEXIBLE from textile/packaging/RSU: no impurities accepted, 0 €/ton',
-                    'COATED FABRIC from ADVERTISING: no impurities accepted, 0 €/ton'
-                  ],
-                  [
-                    'CABLES: impurities < 3% (mainly copper) 0 to - 20 €/ton; impurities >3% but <5% are not accepted (no recycleble with available technonligies); impurities >5% price is related to copper estimations',
-                    'RIGID PVC from B&C: impurities <1% price is quite variable 50€/ton to 200€/ton depending on many factors (dirty, sun exposure, percentage of rubber which is difficult to sort); impurities >1% price drop to 0 €/ton to 50 €/ton',
-                    'OTHER RIGID: impurities <3% price %0-70 €/ton; impurities >3% the price of sorting is higher than the value itself (recycling is anti-economic)',
-                    'AGRICULTURE FILM: no impurities accepted except mud, 0 €/ton',
-                    'FLEXIBLE from textile/packaging/RSU: no impurities accepted, 0 €/ton',
-                    'COATED FABRIC from ADVERTISING: no impurities accepted, 0 €/ton'
-                  ]
+                  dataset.card4.q4_5_qualityAndPricingByStream.map(
+                    (s) => `${s.stream}: ${s.impurityRule} | market ${s.priceRange}`
+                  ),
+                  dataset.card4.q4_5_qualityAndPricingByStream.map(
+                    (s) => `${s.stream}: ${s.impurityRule} | market ${s.priceRange}`
+                  )
                 )}
                 onChangeItems={(items) =>
                   syncRegistryItems('q4_5', items, (_lines, base) => base)
@@ -4341,8 +4331,8 @@ export const QuestionCardsPortal: React.FC<Props> = ({
                   />
                 }
                 items={getRegistryItems('q4_10', dataset.card4.q4_10_exportNotes, [
-                  'NOTHING IS EXPORTED AS A WASTE',
-                  'NO RECYCLERS WANNA SHARE DEEP INFORMATION ABOUT THEIR CLIETNS'
+                  'Demo note: most recyclate uptake is modelled as domestic conversion in this sample.',
+                  'Demo note: detailed downstream customer lists are not included in the public demo dataset.'
                 ])}
                 onChangeItems={(items) =>
                   syncRegistryItems('q4_10', items, (lines, base) => ({
@@ -5814,7 +5804,7 @@ export const QuestionCardsPortal: React.FC<Props> = ({
                 questionCode="Q 7.5"
                 questionTitle="7.5. What general improvements could be brought to the PVC waste management in the country and Europe more generally?"
                 items={getRegistryItems('q7_5', dataset.card7.q7_5_generalImprovements, [
-                  'Creating a unified EU market for sorted PVC waste and recyclate to stimulate new collection streams, combined with hands-on training for municipal collection & sorting plants to recognize the economic value of separating PVC rather than landfilling it (which costs 205–310 €/ton).'
+                  'Demo suggestion: strengthen EU secondary markets for sorted PVC and recyclate, and train collection/sorting staff on the value of separating PVC versus landfilling (illustrative landfill burden ranges are synthetic in this demo).'
                 ])}
                 onChangeItems={(items) =>
                   syncRegistryItems('q7_5', items, (lines, base) => ({
@@ -5846,7 +5836,7 @@ export const QuestionCardsPortal: React.FC<Props> = ({
                   />
                 }
                 items={getRegistryItems('q7_6', dataset.card7.q7_6_keySourcesContacts, [
-                  'Municipal and multi-utility urban waste collectors listed in Question Card 2 (33 entities) and Card 3 (19 multi-utilities), coordinated via WREP / PVC Forum Italia (info@vinylplusitalia.it).'
+                  'Demo sources: fictional municipal and multi-utility collectors listed in Question Cards 2–3, coordinated via the Demo National PVC Network — Italy (rrr.it@pcwi-demo.example).'
                 ])}
                 onChangeItems={(items) =>
                   syncRegistryItems('q7_6', items, (lines, base) => ({

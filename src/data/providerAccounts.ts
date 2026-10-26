@@ -5,9 +5,9 @@ import { GERMANY_2025_DATASET, FRANCE_2025_DATASET, EUROPEAN_COUNTRIES_SUMMARY }
 export const INITIAL_PROVIDER_ACCOUNTS: ProviderAccount[] = [
   {
     id: 'acc-it-rrr',
-    contactName: 'VinylPlus Italia RRR Team',
-    email: 'info@vinylplusitalia.it',
-    organization: 'PVC Forum Italia / VinylPlus Italia (WREP)',
+    contactName: 'Demo Italia RRR Desk',
+    email: 'rrr.it@pcwi-demo.example',
+    organization: 'Demo National PVC Network — Italy',
     roleType: 'Regional Representative (RRR)',
     countryCode: 'IT',
     countryName: 'Italy',
@@ -27,9 +27,9 @@ export const INITIAL_PROVIDER_ACCOUNTS: ProviderAccount[] = [
   },
   {
     id: 'acc-de-rrr',
-    contactName: 'Dr. Klaus Weber',
-    email: 'k.weber@vinylplus-de.org',
-    organization: 'VinylPlus Deutschland / Rewindo GmbH',
+    contactName: 'Alex Berg (Demo)',
+    email: 'rrr.de@pcwi-demo.example',
+    organization: 'Demo National PVC Network — Germany',
     roleType: 'Regional Representative (RRR)',
     countryCode: 'DE',
     countryName: 'Germany',
@@ -49,9 +49,9 @@ export const INITIAL_PROVIDER_ACCOUNTS: ProviderAccount[] = [
   },
   {
     id: 'acc-fr-rrr',
-    contactName: 'Claire Laurent',
-    email: 'c.laurent@snep-pvc.fr',
-    organization: 'Recovinyl France / SNEP',
+    contactName: 'Camille Dupont (Demo)',
+    email: 'rrr.fr@pcwi-demo.example',
+    organization: 'Demo National PVC Network — France',
     roleType: 'Regional Representative (RRR)',
     countryCode: 'FR',
     countryName: 'France',
